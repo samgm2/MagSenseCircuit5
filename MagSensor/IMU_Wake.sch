@@ -1,0 +1,234 @@
+EESchema Schematic File Version 2
+LIBS:MagSensor-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LSM330
+LIBS:SamParts
+LIBS:MagSensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LSM330 U9
+U 1 1 58A2433C
+P 4225 3350
+AR Path="/58A2433C" Ref="U9"  Part="1" 
+AR Path="/58A24291/58A2433C" Ref="U9"  Part="1" 
+F 0 "U9" H 3700 4325 45  0000 R TNN
+F 1 "LSM330" H 4325 3475 45  0000 R TNN
+F 2 "SamLib:LSM330" H 4225 3350 60  0001 C CNN
+F 3 "" H 4225 3350 60  0001 C CNN
+F 4 "LSM330" H 4225 3350 60  0001 C CNN "MPN"
+	1    4225 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR040
+U 1 1 58A2443F
+P 1950 1825
+F 0 "#PWR040" H 1950 1675 50  0001 C CNN
+F 1 "+3.3V" H 1950 1965 50  0000 C CNN
+F 2 "" H 1950 1825 50  0000 C CNN
+F 3 "" H 1950 1825 50  0000 C CNN
+	1    1950 1825
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 2750 2    60   Input ~ 12
+SPI_CLK
+Text HLabel 5400 2650 2    60   Input ~ 12
+SPI_MOSI
+Text HLabel 6375 2950 2    60   Output ~ 12
+SPI_MISO
+Text HLabel 5400 3050 2    60   Input ~ 12
+~GYRO_CS
+Text HLabel 5425 3750 2    60   Input ~ 12
+~ACC_CS
+$Comp
+L C C25
+U 1 1 58A2597B
+P 2250 3200
+F 0 "C25" H 2075 3300 50  0000 L CNN
+F 1 "0.1uF" H 2000 3100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 2288 3050 50  0001 C CNN
+F 3 "" H 2250 3200 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 2250 3200 60  0001 C CNN "MNP"
+	1    2250 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 58A25B4F
+P 2250 4500
+F 0 "#PWR041" H 2250 4250 50  0001 C CNN
+F 1 "GND" H 2250 4350 50  0000 C CNN
+F 2 "" H 2250 4500 50  0000 C CNN
+F 3 "" H 2250 4500 50  0000 C CNN
+	1    2250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3350 2250 3475
+Wire Wire Line
+	2250 3475 2250 4050
+Wire Wire Line
+	2250 4050 2250 4500
+Wire Wire Line
+	1950 3350 1950 3475
+Wire Wire Line
+	1950 3475 2250 3475
+Connection ~ 2250 3475
+$Comp
+L C C26
+U 1 1 58A25BDB
+P 3025 3525
+F 0 "C26" H 2825 3625 50  0000 L CNN
+F 1 "0.01uF" H 3075 3425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3063 3375 50  0001 C CNN
+F 3 "" H 3025 3525 50  0001 C CNN
+F 4 "Murata: GRM155R71H103KA88D" V 3025 3525 60  0001 C CNN "MPN"
+	1    3025 3525
+	1    0    0    -1  
+$EndComp
+Text HLabel 6200 3950 2    60   Output ~ 12
+HIB_IO
+$Comp
+L R R39
+U 1 1 58AE050A
+P 5575 3950
+F 0 "R39" V 5655 3950 50  0000 C CNN
+F 1 "10K" V 5575 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5505 3950 50  0001 C CNN
+F 3 "" H 5575 3950 50  0001 C CNN
+F 4 "TE: CRG0402J10K/10" V 5575 3950 60  0001 C CNN "MPN"
+	1    5575 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 3375 3025 3250
+Wire Wire Line
+	3025 3250 3325 3250
+Wire Wire Line
+	2250 4050 3025 4050
+Wire Wire Line
+	3025 4050 3325 4050
+Connection ~ 2250 4050
+Wire Wire Line
+	3025 3675 3025 4050
+Connection ~ 3025 4050
+$Comp
+L C C23
+U 1 1 58C190F9
+P 1950 3200
+F 0 "C23" H 1850 3100 50  0000 L CNN
+F 1 "0.01uF" H 1675 3300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1988 3050 50  0001 C CNN
+F 3 "" H 1950 3200 50  0001 C CNN
+F 4 "Murata: GRM155R71H103KA88D" V 1950 3200 60  0001 C CNN "MPN"
+	1    1950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1825 1950 2025
+Wire Wire Line
+	1950 2025 1950 2650
+Wire Wire Line
+	1950 2650 1950 3050
+Wire Wire Line
+	1950 2650 2250 2650
+Wire Wire Line
+	2250 2650 2675 2650
+Wire Wire Line
+	2675 2650 3325 2650
+Wire Wire Line
+	3325 2850 2675 2850
+Connection ~ 1950 2650
+Wire Wire Line
+	2250 3050 2250 2650
+Connection ~ 2250 2650
+Connection ~ 2675 2650
+Wire Wire Line
+	5125 2750 5400 2750
+Wire Wire Line
+	5125 2650 5400 2650
+Wire Wire Line
+	5125 2950 6300 2950
+Wire Wire Line
+	6300 2950 6375 2950
+Wire Wire Line
+	5125 3650 6300 3650
+Wire Wire Line
+	6300 3650 6300 2950
+Connection ~ 6300 2950
+Wire Wire Line
+	5125 3050 5400 3050
+Wire Wire Line
+	5125 3750 5425 3750
+NoConn ~ 5125 3350
+NoConn ~ 5125 4050
+Wire Wire Line
+	2675 2850 2675 2650
+$Comp
+L +3.3V #PWR043
+U 1 1 58C1B444
+P 5400 3375
+F 0 "#PWR043" H 5400 3225 50  0001 C CNN
+F 1 "+3.3V" H 5550 3425 50  0000 C CNN
+F 2 "" H 5400 3375 50  0000 C CNN
+F 3 "" H 5400 3375 50  0000 C CNN
+	1    5400 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 3450 5400 3450
+Wire Wire Line
+	5400 3450 5400 3375
+Wire Wire Line
+	5125 3950 5425 3950
+NoConn ~ 5125 3250
+Wire Wire Line
+	5725 3950 6000 3950
+Wire Wire Line
+	6000 3950 6000 3950
+Wire Wire Line
+	6000 3950 6050 3950
+Wire Wire Line
+	6050 3950 6200 3950
+$EndSCHEMATC

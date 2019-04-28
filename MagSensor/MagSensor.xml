@@ -1,0 +1,3092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor.sch</source>
+    <date>1/7/2019 11:58:47 AM</date>
+    <tool>Eeschema (5.0.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>MagSensor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Power/" tstamps="/5863E81E/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>Power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/xmc4200/" tstamps="/58649939/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>xmc4200.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/LEDs/" tstamps="/587CA91D/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>LEDs.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/IMU_Wake/" tstamps="/58A24291/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>IMU.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/LCD/" tstamps="/58AD7FD2/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>LCD.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Sensors and Interfaces/" tstamps="/587681B0/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>Sensors_Interfaces.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Piezo/" tstamps="/58EBA795/">
+      <title_block>
+        <title>MagSensor 4</title>
+        <company>Maglogix</company>
+        <rev>A</rev>
+        <date>2017-09-11</date>
+        <source>Piezo.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value="by Sam Michael"/>
+        <comment number="4" value="64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R3">
+      <value>390K (1%)</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07390KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>589BD673</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RT0402DRD07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>589BE444</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>MCP73831-2AC</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="MPN">MCP73831-2AC</field>
+      </fields>
+      <libsource lib="SamParts" part="MCP73831-2AC" description=""/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>589CC2DF</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>589CE966</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TCR2EE/EF</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-553</footprint>
+      <fields>
+        <field name="MPN">TCR2EE/EF</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TCR2EE_EF-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>58AACC4D</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>58AE4B24</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>59825720</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>M22-2510246 {SPN02SYBN-RC}</value>
+      <footprint>Connectors_Harwin:Harwin_LTek-Male_02x2.00mm_Straight</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/harwin-inc/M22-2510246/952-2280-ND/3728244</datasheet>
+      <libsource lib="Device" part="Jumper_NO_Small" description="Jumper, normally open, small symbol"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>59B8C321</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>009155004541006</value>
+      <footprint>SamLib:BatCon_009155004541006</footprint>
+      <libsource lib="conn" part="CONN_01X04" description="Connector, single row, 01x04"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5AB673B6</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5C3176E4</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5C318783</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5C318A7A</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5C3969D3</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power/" tstamps="/5863E81E/"/>
+      <tstamp>5C397B1C</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>12MHz</value>
+      <footprint>SamLib:Crystal_NX3225</footprint>
+      <fields>
+        <field name="MPN">CX3225GA12000D0PTVCC</field>
+      </fields>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5864A6EB</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>15pF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL05C150JB5NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5864A6F2</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>BLM18PG600</value>
+      <footprint>Inductors:Inductor_Wurth_MAPI-2010</footprint>
+      <fields>
+        <field name="MPN">BLM18PG600</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5864A738</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58846891</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>3V3</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58A5399B</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>15pF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL05C150JB5NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58A82E84</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58A83795</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58A84108</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58A8D592</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>499</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07499RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AA7696</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>GND</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58ADF2C4</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>GND</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58ADF6ED</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>MOSI</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AE0767</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>SPICLK</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AE0A0C</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>IMUcs</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AE0A6D</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>LCDcs</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AE0BC2</tstamp>
+    </comp>
+    <comp ref="VBAT_DIV1">
+      <value>TEST</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>58AE10C4</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>XMC4200-F64</value>
+      <footprint>SamLib:XMC4200-64LQFP</footprint>
+      <libsource lib="MagSensor-rescue" part="XMC4200-F64-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59B1C270</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59B6C6D5</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59B6C7CB</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59B6D2C2</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59B9EC57</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>MISO</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59BBA954</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>I2C0_C</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59BBBC89</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>I2C_D</value>
+      <footprint>SamLib:TP_Pin40</footprint>
+      <fields>
+        <field name="MPN">5021</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="TEST" description=""/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59BBBE42</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>0-DNP</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402JR-070RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59BDB97E</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>0-DNP</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402JR-070RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>59BDBF09</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AT25_EEPROM</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>Adesto: AT25SF041-SSHD-T</datasheet>
+      <libsource lib="memory" part="AT25_EEPROM" description="Atmel serial EEPROM with SPI interface"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5B83F1D4</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5B83F406</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5B851815</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5C318EAA</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5C318F80</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5C31900A</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/xmc4200/" tstamps="/58649939/"/>
+      <tstamp>5C6E9B97</tstamp>
+    </comp>
+    <comp ref="DS2">
+      <value>CLVBA_RGB_LED</value>
+      <footprint>SamLib:CLVBA</footprint>
+      <fields>
+        <field name="MPN">CLVBA_RGB_LED</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="CLVBA_RGB_LED-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58ACFB06</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58ACFB6D</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58ACFB7A</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58ACFB81</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC6D64</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC7285</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC730A</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>124</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0805FR-07124RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC8D9B</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>124</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0805FR-07124RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC9023</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>124</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0805FR-07124RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>58BC90A2</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>5C37C405</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>5C37D2A5</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/LEDs/" tstamps="/587CA91D/"/>
+      <tstamp>5C37D320</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>58A2597B</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>TL3301</value>
+      <footprint>SamLib:ESwitch_TL3301+Gull+J</footprint>
+      <libsource lib="MagSensor-rescue" part="ESWITCH_T_GULL-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>58C4E706</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>58C4EF26</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>58C4EFC3</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RT0402DRD07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>5A8A720F</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>5B946CD8</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>5C2EEB93</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>58AE050A</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>LSM6DS3</value>
+      <footprint>LSM6DS3:PQFN50P300X250X86-14N</footprint>
+      <datasheet>LSM6DS3</datasheet>
+      <fields>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">STMicroelectronics</field>
+        <field name="Field6">LGA-14 STMicroelectronics</field>
+        <field name="Field7">iNEMO inertial module: 3D accelerometer and 3D gyroscope</field>
+        <field name="Field8">None</field>
+      </fields>
+      <libsource lib="LSM6DS3" part="LSM6DS3" description=""/>
+      <sheetpath names="/IMU_Wake/" tstamps="/58A24291/"/>
+      <tstamp>5C6F4566</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>587D7CEF</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>49.9</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <fields>
+        <field name="MPN">Stackpole: RNCP1206FTD49R9</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>587D7D38</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Murata:GRM188R61C105KA93J</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>587D7D4E</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Murata:GRM188R61C105KA93J</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8953</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD89A7</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8A0A</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8A6A</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8AD1</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8F61</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD8FD5</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD9040</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58AD9F07</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58ADA0BF</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>ER-CON2.0-2P-SMD</value>
+      <footprint>Connectors_JST:JST_PH_S2B-PH-K_02x2.00mm_Angled</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="MPN">JST: S2B-PH-K-S(LF)(SN)</field>
+      </fields>
+      <libsource lib="SamParts" part="ER-CON2.0-2P-SMD" description=""/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>58C19693</tstamp>
+    </comp>
+    <comp ref="P7">
+      <value>SFV30R-4STBE1HLF</value>
+      <footprint>SamLib:SFV30R-4STBE1HLF-Inverted</footprint>
+      <libsource lib="SamParts" part="SFV30R-4STBE1HLF" description=""/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5B94B00A</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C384B44</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C6C7326</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C6C7335</tstamp>
+    </comp>
+    <comp ref="C62">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C6C7374</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C6DC9BB</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LCD/" tstamps="/58AD7FD2/"/>
+      <tstamp>5C6E9F6A</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>BLM18PG600</value>
+      <footprint>Inductors:Inductor_Wurth_MAPI-2010</footprint>
+      <fields>
+        <field name="MPN">BLM18PG600</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5879C0E8</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>33</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-0733RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5879C0F2</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo:RC0402FR-074K7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>587A15E8</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5872E8DA</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>PGM_DBG</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
+      <libsource lib="MagSensor-rescue" part="PGM_DBG-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58877E57</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>MBR0520LT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="MPN">MBR0520LT1G</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5887ADD1</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>33</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-0733RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AA77F2</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AA842C</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>ESD5V3U2U</value>
+      <footprint>SamLib:SOT-723</footprint>
+      <fields>
+        <field name="MPN">Infineon: ESD5V3U2U03FH6327XTSA1</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="ESD5V3U2U-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AC0988</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>USB_Micro B</value>
+      <footprint>SamLib:1054431101</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/1054431101_sd.pdf</datasheet>
+      <fields>
+        <field name="MPN">Molex:1054431101</field>
+      </fields>
+      <libsource lib="MagSensor-rescue" part="USB_OTG-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AAAF14</tstamp>
+    </comp>
+    <comp ref="MNT1">
+      <value>MNT</value>
+      <footprint>SamLib:N8-Screw</footprint>
+      <libsource lib="MagSensor-rescue" part="MNT" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AF0047</tstamp>
+    </comp>
+    <comp ref="MNT2">
+      <value>MNT</value>
+      <footprint>SamLib:N8-Screw</footprint>
+      <libsource lib="MagSensor-rescue" part="MNT" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AF076D</tstamp>
+    </comp>
+    <comp ref="MNT3">
+      <value>MNT</value>
+      <footprint>SamLib:N8-Screw</footprint>
+      <libsource lib="MagSensor-rescue" part="MNT" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58AF07FE</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>MBR0520LT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="MPN">MBR0520LT1G</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58C16069</tstamp>
+    </comp>
+    <comp ref="MNT4">
+      <value>MNT</value>
+      <footprint>SamLib:N8-Screw</footprint>
+      <libsource lib="MagSensor-rescue" part="MNT" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58F750D5</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BCW89</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">BCW89,215</field>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="Device" part="Q_PNP_BEC" description="PNP transistor, base/emitter/collector"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC3DE7</tstamp>
+    </comp>
+    <comp ref="R72">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC3DF2</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>MBR0520LT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="MPN">MBR0520LT1G</field>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC4CA3</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>CONN_01X03</value>
+      <footprint>SamLib:3_50D_100SP_Solder</footprint>
+      <fields>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="conn" part="CONN_01X03" description="Connector, single row, 01x03"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC586E</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BCW89</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">BCW89,215</field>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="Device" part="Q_PNP_BEC" description="PNP transistor, base/emitter/collector"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC69F1</tstamp>
+    </comp>
+    <comp ref="R73">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">TE: CRG0402J10K/10</field>
+        <field name="Notes">DNP</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC69F8</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>MBR0520LT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="MPN">MBR0520LT1G</field>
+        <field name="Notes:">DNP</field>
+      </fields>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>58FC69FF</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>33</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-0733RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5AB6BC43</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>33</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-0733RL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5AB6BD2B</tstamp>
+    </comp>
+    <comp ref="P6">
+      <value>POGO_PGM</value>
+      <footprint>SamLib:POGO5</footprint>
+      <libsource lib="conn" part="CONN_01X05" description="Connector, single row, 01x05"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5AB7DF2F</tstamp>
+    </comp>
+    <comp ref="ADJ_1">
+      <value>FIDUCIAL</value>
+      <footprint>SamLib:FiducialSam1</footprint>
+      <libsource lib="CPU_42A-V1" part="FIDUCIAL" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5ACC9F6E</tstamp>
+    </comp>
+    <comp ref="ADJ_2">
+      <value>FIDUCIAL</value>
+      <footprint>SamLib:FiducialSam1</footprint>
+      <libsource lib="CPU_42A-V1" part="FIDUCIAL" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5ACCA267</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B8232ED</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823304</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823338</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823342</tstamp>
+    </comp>
+    <comp ref="C60">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823359</tstamp>
+    </comp>
+    <comp ref="C67">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B82338D</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823397</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B8233AE</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B8233E2</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B8233EC</tstamp>
+    </comp>
+    <comp ref="C61">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823403</tstamp>
+    </comp>
+    <comp ref="C68">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B823437</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>BLM18PG600</value>
+      <footprint>Inductors:Inductor_Wurth_MAPI-2010</footprint>
+      <fields>
+        <field name="MPN">BLM18PG600</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5B929703</tstamp>
+    </comp>
+    <comp ref="C57">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5C315902</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5C315A6E</tstamp>
+    </comp>
+    <comp ref="C58">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5C315B3A</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A475MQ8NNNC</datasheet>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5C3163B7</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5BA47333</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RC0402FR-07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5BA4732B</tstamp>
+    </comp>
+    <comp ref="C59">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF80A4</tstamp>
+    </comp>
+    <comp ref="U22">
+      <value>TLV493D</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="MagSensor-rescue" part="TLV493D-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF809D</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF8061</tstamp>
+    </comp>
+    <comp ref="U20">
+      <value>TLV493D</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="MagSensor-rescue" part="TLV493D-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF805A</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF6D3D</tstamp>
+    </comp>
+    <comp ref="U21">
+      <value>TLV493D</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="MagSensor-rescue" part="TLV493D-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BF6D36</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BCC8E8</tstamp>
+    </comp>
+    <comp ref="U19">
+      <value>TLV493D</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="MagSensor-rescue" part="TLV493D-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>59BCAF9D</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="MPN">Samsung: CL10A475MQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors and Interfaces/" tstamps="/587681B0/"/>
+      <tstamp>5C7FD240</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>PiezoTransducer</value>
+      <footprint>SamLib:Piezo_22mm_7mm_4KHz</footprint>
+      <libsource lib="SamParts" part="PiezoTransducer" description=""/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>58ED3E3B</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>A4953</value>
+      <footprint>Housings_SOIC:HTSOP-8-1EP_3.9x4.9mm_Pitch1.27mm_ThermalVias</footprint>
+      <datasheet>A4953ELJTR-T</datasheet>
+      <libsource lib="SamParts" part="A4953" description=""/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B886625</tstamp>
+    </comp>
+    <comp ref="G1">
+      <value>AP3012</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="SamParts" part="AP3012" description=""/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8E1193</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <footprint>Diodes_SMD:D_SOD-123</footprint>
+      <datasheet>Diodes Inc: 1N5819HW-7-F</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8E1695</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>100K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo: RT0402DRD07100KL</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8E75DC</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo:RC0402FR-074K7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8E9DFF</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo:RC0402FR-074K7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8EE2C6</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo:RC0402FR-074K7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8EE81F</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8F434E</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="MPN">Yageo:RC0402FR-074K7L</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8F55B2</tstamp>
+    </comp>
+    <comp ref="L4">
+      <value>10uH</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="MPN">LQM21FN100M80L</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>58ED1AEB</tstamp>
+    </comp>
+    <comp ref="C54">
+      <value>1uF (50v)</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <datasheet>Samsung: CL10A105KB8NNNC</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8FB0B8</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>0.1uF (50V) DNS</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">TDK: C1005X5R1H104M050BB</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8FBBCD</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>0.1uF (50V) DNS</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">TDK: C1005X5R1H104M050BB</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B8FBF0B</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>TBD (50v) (DNP)</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B908DA4</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>SiP32510</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <datasheet>http://www.vishay.com/docs/63577/sip32510.pdf</datasheet>
+      <libsource lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor" description=""/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B92DD03</tstamp>
+    </comp>
+    <comp ref="C66">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B92DD0B</tstamp>
+    </comp>
+    <comp ref="C69">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="MNP">Murata: GRM155R71C104KA88J</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B92DD1A</tstamp>
+    </comp>
+    <comp ref="C70">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <datasheet>Taiyo Yuden: EMK105BJ105KV-F</datasheet>
+      <fields>
+        <field name="MPN">Taiyo Yuden: JMK105BJ105KV-F</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5B92DD45</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>4.7K</value>
+      <footprint>Resistors_SMD:R_1206</footprint>
+      <datasheet>Stackpole: RMCF1206JT4K70</datasheet>
+      <fields>
+        <field name="MPN">Stackpole: RMCF1206JT4K70</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5C36A67B</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>MMBT2222</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <fields>
+        <field name="MPN">MMBT2222A-TP</field>
+      </fields>
+      <libsource lib="Device" part="Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
+      <sheetpath names="/Piezo/" tstamps="/58EBA795/"/>
+      <tstamp>5C37D5B6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CPU_42A-V1" part="FIDUCIAL">
+      <footprints>
+        <fp>*FIDUCIAL*</fp>
+        <fp>*FIDUCIAL_0.5MM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">ADJ_</field>
+        <field name="Value">FIDUCIAL</field>
+      </fields>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Jumper_NO_Small">
+      <description>Jumper, normally open, small symbol</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NO_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NPN_BEC">
+      <description>NPN transistor, base/emitter/collector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NPN_BEC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PNP_BEC">
+      <description>PNP transistor, base/emitter/collector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PNP_BEC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LSM6DS3" part="LSM6DS3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LSM6DS3</field>
+        <field name="Footprint">PQFN50P300X250X86-14N</field>
+        <field name="Datasheet">LSM6DS3</field>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">STMicroelectronics</field>
+        <field name="Field6">LGA-14 STMicroelectronics</field>
+        <field name="Field7">iNEMO inertial module: 3D accelerometer and 3D gyroscope</field>
+        <field name="Field8">None</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDO/SA0" type="BiDi"/>
+        <pin num="2" name="SDX" type="BiDi"/>
+        <pin num="3" name="SCX" type="BiDi"/>
+        <pin num="4" name="INT1" type="output"/>
+        <pin num="5" name="VDDIO" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="INT2" type="output"/>
+        <pin num="10" name="OSC" type="BiDi"/>
+        <pin num="12" name="CS" type="input"/>
+        <pin num="13" name="SCL" type="input"/>
+        <pin num="14" name="SDA" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="CLVBA_RGB_LED-RESCUE-MagSensor">
+      <footprints>
+        <fp>*CLVBA_RGB_LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">DS</field>
+        <field name="Value">CLVBA_RGB_LED-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="R_C" type="BiDi"/>
+        <pin num="2" name="A" type="power_in"/>
+        <pin num="3" name="B_C" type="BiDi"/>
+        <pin num="4" name="G_C" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="ESD5V3U2U-RESCUE-MagSensor">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ESD5V3U2U-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="3state"/>
+        <pin num="2" name="P2" type="3state"/>
+        <pin num="3" name="G" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="ESWITCH_T_GULL-RESCUE-MagSensor">
+      <footprints>
+        <fp>*ESWITCH_T_GULL*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">ESWITCH_T_GULL-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Ao" type="BiDi"/>
+        <pin num="2" name="Bo" type="BiDi"/>
+        <pin num="3" name="Ai" type="power_in"/>
+        <pin num="4" name="Bi" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="MNT">
+      <fields>
+        <field name="Reference">MNT</field>
+        <field name="Value">MNT</field>
+      </fields>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="PGM_DBG-RESCUE-MagSensor">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">PGM_DBG-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="power_in"/>
+        <pin num="2" name="TMS" type="BiDi"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="TCK" type="BiDi"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="TDO_SWO" type="BiDi"/>
+        <pin num="7" name="C7" type="BiDi"/>
+        <pin num="8" name="TDI" type="BiDi"/>
+        <pin num="9" name="C9" type="BiDi"/>
+        <pin num="10" name="RESET" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="SiP32510-RESCUE-MagSensor">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SiP32510-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vout" type="power_out"/>
+        <pin num="2" name="Vout" type="passive"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Vin" type="power_in"/>
+        <pin num="6" name="Vin" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="TCR2EE_EF-RESCUE-MagSensor">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCR2EE_EF-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vin" type="power_in"/>
+        <pin num="2" name="Gnd" type="power_in"/>
+        <pin num="3" name="Ctl" type="input"/>
+        <pin num="4" name="Vout" type="power_out"/>
+        <pin num="5" name="NC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="TEST">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TEST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="TLV493D-RESCUE-MagSensor">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV493D-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL/INT" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="SDA/ADDR" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="USB_OTG-RESCUE-MagSensor">
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_OTG-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MagSensor-rescue" part="XMC4200-F64-RESCUE-MagSensor">
+      <footprints>
+        <fp>*LQFP-64-19*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XMC4200-F64-RESCUE-MagSensor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P0.1" type="BiDi"/>
+        <pin num="2" name="P0.0" type="BiDi"/>
+        <pin num="3" name="P0.10" type="BiDi"/>
+        <pin num="4" name="P0.9" type="BiDi"/>
+        <pin num="5" name="P3.0" type="BiDi"/>
+        <pin num="6" name="USB_D-" type="BiDi"/>
+        <pin num="7" name="USB_D+" type="BiDi"/>
+        <pin num="8" name="VDDP" type="power_in"/>
+        <pin num="9" name="VDDC" type="BiDi"/>
+        <pin num="10" name="HIB_IO_0" type="BiDi"/>
+        <pin num="11" name="RTC_XTAL_1" type="BiDi"/>
+        <pin num="12" name="RTC_XTAL_2" type="BiDi"/>
+        <pin num="13" name="VBAT" type="power_in"/>
+        <pin num="14" name="P14.14" type="BiDi"/>
+        <pin num="15" name="P14.7" type="BiDi"/>
+        <pin num="16" name="P14.6" type="BiDi"/>
+        <pin num="17" name="P14.5" type="BiDi"/>
+        <pin num="18" name="P14.4" type="BiDi"/>
+        <pin num="19" name="P14.3" type="BiDi"/>
+        <pin num="20" name="P14.0" type="BiDi"/>
+        <pin num="21" name="VAGND" type="power_in"/>
+        <pin num="22" name="VAREF" type="passive"/>
+        <pin num="23" name="P14.9" type="BiDi"/>
+        <pin num="24" name="P14.8" type="BiDi"/>
+        <pin num="25" name="P2.15" type="BiDi"/>
+        <pin num="26" name="P2.14" type="BiDi"/>
+        <pin num="27" name="P2.9" type="BiDi"/>
+        <pin num="28" name="P2.8" type="BiDi"/>
+        <pin num="29" name="P2.5" type="BiDi"/>
+        <pin num="30" name="P2.4" type="BiDi"/>
+        <pin num="31" name="P2.3" type="BiDi"/>
+        <pin num="32" name="P2.2" type="BiDi"/>
+        <pin num="33" name="P2.1" type="BiDi"/>
+        <pin num="34" name="P2.0" type="BiDi"/>
+        <pin num="35" name="P2.7" type="BiDi"/>
+        <pin num="36" name="P2.6" type="BiDi"/>
+        <pin num="37" name="VSS" type="power_in"/>
+        <pin num="38" name="VDDP1" type="power_in"/>
+        <pin num="39" name="XTAL1" type="BiDi"/>
+        <pin num="40" name="XTAL2" type="BiDi"/>
+        <pin num="41" name="VSSO" type="power_in"/>
+        <pin num="42" name="VDDC1" type="BiDi"/>
+        <pin num="43" name="PORST#" type="BiDi"/>
+        <pin num="44" name="TMS" type="BiDi"/>
+        <pin num="45" name="TCK" type="BiDi"/>
+        <pin num="46" name="P1.15" type="BiDi"/>
+        <pin num="47" name="P1.5" type="BiDi"/>
+        <pin num="48" name="P1.4" type="BiDi"/>
+        <pin num="49" name="P1.3" type="BiDi"/>
+        <pin num="50" name="P1.2" type="BiDi"/>
+        <pin num="51" name="P1.1" type="BiDi"/>
+        <pin num="52" name="P1.0" type="BiDi"/>
+        <pin num="53" name="P1.9" type="BiDi"/>
+        <pin num="54" name="P1.8" type="BiDi"/>
+        <pin num="55" name="P1.7" type="BiDi"/>
+        <pin num="56" name="VDDP2" type="power_in"/>
+        <pin num="57" name="P0.8" type="BiDi"/>
+        <pin num="58" name="P0.7" type="BiDi"/>
+        <pin num="59" name="P0.11" type="BiDi"/>
+        <pin num="60" name="P0.6" type="BiDi"/>
+        <pin num="61" name="P0.5" type="BiDi"/>
+        <pin num="62" name="P0.4" type="BiDi"/>
+        <pin num="63" name="P0.3" type="BiDi"/>
+        <pin num="64" name="P0.2" type="BiDi"/>
+        <pin num="65" name="EPAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="A4953">
+      <footprints>
+        <fp>*SOIC8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">A4953</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="IN2" type="input"/>
+        <pin num="3" name="IN1" type="input"/>
+        <pin num="4" name="VREF" type="input"/>
+        <pin num="5" name="VBB" type="power_in"/>
+        <pin num="6" name="OUT1" type="output"/>
+        <pin num="7" name="LSS" type="input"/>
+        <pin num="8" name="OUT2" type="output"/>
+        <pin num="9" name="PAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="AP3012">
+      <footprints>
+        <fp>*SOT23-5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">G</field>
+        <field name="Value">AP3012</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="FB" type="BiDi"/>
+        <pin num="4" name="~SHDN" type="input"/>
+        <pin num="5" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="ER-CON2.0-2P-SMD">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">ER-CON2.0-2P-SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V-" type="BiDi"/>
+        <pin num="2" name="V+" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="MCP73831-2AC">
+      <footprints>
+        <fp>*SOT23-5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831-2AC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="BiDi"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="input"/>
+        <pin num="5" name="PROG" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="PiezoTransducer">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PiezoTransducer</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="input"/>
+        <pin num="2" name="P2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamParts" part="SFV30R-4STBE1HLF">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">SFV30R-4STBE1HLF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="BiDi"/>
+        <pin num="2" name="~SPI_CS" type="input"/>
+        <pin num="3" name="RESET" type="input"/>
+        <pin num="4" name="A0" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="R/W_/WR" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="SPI_CLK" type="input"/>
+        <pin num="14" name="SPI_MOSI" type="input"/>
+        <pin num="15" name="Vdd" type="power_in"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="P17" type="BiDi"/>
+        <pin num="18" name="P18" type="BiDi"/>
+        <pin num="19" name="P19" type="BiDi"/>
+        <pin num="20" name="P20" type="BiDi"/>
+        <pin num="21" name="P21" type="BiDi"/>
+        <pin num="22" name="P22" type="BiDi"/>
+        <pin num="23" name="P23" type="BiDi"/>
+        <pin num="24" name="P24" type="BiDi"/>
+        <pin num="25" name="P25" type="BiDi"/>
+        <pin num="26" name="P26" type="BiDi"/>
+        <pin num="27" name="P27" type="BiDi"/>
+        <pin num="28" name="P28" type="power_in"/>
+        <pin num="29" name="P29" type="power_in"/>
+        <pin num="30" name="P30" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector, single row, 01x03</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector, single row, 01x04</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X05">
+      <description>Connector, single row, 01x05</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X05</fp>
+        <fp>Pin_Header_Angled_1X05</fp>
+        <fp>Socket_Strip_Straight_1X05</fp>
+        <fp>Socket_Strip_Angled_1X05</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="memory" part="25LC_EEPROM">
+      <aliases>
+        <alias>AT25_EEPROM</alias>
+        <alias>BR25S_EEPROM</alias>
+        <alias>CAT250_EEPROM</alias>
+      </aliases>
+      <description>External EEPROM with SPI interface in 8-pin package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">25LC_EEPROM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CS" type="input"/>
+        <pin num="2" name="MISO" type="input"/>
+        <pin num="3" name="~WP" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="MOSI" type="input"/>
+        <pin num="6" name="SCK" type="input"/>
+        <pin num="7" name="~HOLD" type="input"/>
+        <pin num="8" name="Vcc" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CPU_42A-V1">
+      <uri>U:/Libraries/CPU_42A-V1.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="LSM6DS3">
+      <uri>U:\SamLib.pretty\LSM6DS3.lib</uri>
+    </library>
+    <library logical="MagSensor-rescue">
+      <uri>D:\CES\Circuits\MagSensor5a\MagSensor4L/MagSensor-rescue.lib</uri>
+    </library>
+    <library logical="SamParts">
+      <uri>U:/Libraries/SamParts.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library/conn.lib</uri>
+    </library>
+    <library logical="memory">
+      <uri>C:\Program Files\KiCad\share\kicad\library/memory.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/LCD/~LCD_CS">
+      <node ref="U6" pin="26"/>
+      <node ref="P7" pin="2"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="2" name="/IMU_Wake/SPI_MOSI">
+      <node ref="TP6" pin="1"/>
+      <node ref="U9" pin="14"/>
+      <node ref="U1" pin="5"/>
+      <node ref="P7" pin="14"/>
+      <node ref="U6" pin="29"/>
+    </net>
+    <net code="3" name="/IMU_Wake/SPI_CLK">
+      <node ref="TP5" pin="1"/>
+      <node ref="U9" pin="13"/>
+      <node ref="P7" pin="13"/>
+      <node ref="U6" pin="30"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="4" name="/IMU_Wake/HIB_IO">
+      <node ref="R39" pin="1"/>
+      <node ref="R46" pin="1"/>
+      <node ref="C24" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="U6" pin="10"/>
+      <node ref="U6" pin="48"/>
+    </net>
+    <net code="5" name="/IMU_Wake/~IMU_CS">
+      <node ref="U9" pin="12"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="U6" pin="27"/>
+    </net>
+    <net code="6" name="/IMU_Wake/SPI_MISO">
+      <node ref="TP3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U6" pin="32"/>
+    </net>
+    <net code="7" name="/LEDs/LED_BLU">
+      <node ref="R34" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="R35" pin="2"/>
+    </net>
+    <net code="8" name="/LEDs/LED_GRN">
+      <node ref="U6" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="9" name="/LEDs/LED_RED">
+      <node ref="R31" pin="2"/>
+      <node ref="U6" pin="3"/>
+      <node ref="R30" pin="1"/>
+    </net>
+    <net code="10" name="/LCD/LCD_EN">
+      <node ref="U12" pin="3"/>
+      <node ref="U6" pin="52"/>
+    </net>
+    <net code="11" name="/LCD/~LCD_BACKLIGHT">
+      <node ref="U6" pin="50"/>
+      <node ref="R42" pin="2"/>
+    </net>
+    <net code="12" name="/LCD/LCD_A0">
+      <node ref="U6" pin="25"/>
+      <node ref="P7" pin="4"/>
+    </net>
+    <net code="13" name="/Power/ChargeStat">
+      <node ref="U6" pin="15"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="14" name="/Sensors and Interfaces/S_PWR4_EN">
+      <node ref="U6" pin="64"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="15" name="/Sensors and Interfaces/S_PWR3_EN">
+      <node ref="U6" pin="63"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="16" name="/Sensors and Interfaces/S_PWR2_EN">
+      <node ref="U7" pin="3"/>
+      <node ref="U6" pin="62"/>
+    </net>
+    <net code="17" name="/Sensors and Interfaces/S_PWR1_EN">
+      <node ref="U6" pin="60"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="18" name="/Sensors and Interfaces/I2cPuD">
+      <node ref="U6" pin="58"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="19" name="/Sensors and Interfaces/I2cPuC">
+      <node ref="U6" pin="57"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="20" name="/Sensors and Interfaces/I2C_0_CLK">
+      <node ref="U6" pin="59"/>
+      <node ref="U22" pin="1"/>
+      <node ref="U20" pin="1"/>
+      <node ref="R23" pin="2"/>
+      <node ref="U21" pin="1"/>
+      <node ref="U19" pin="1"/>
+      <node ref="TP7" pin="1"/>
+    </net>
+    <net code="21" name="/Sensors and Interfaces/I2C_0_DTA">
+      <node ref="R16" pin="2"/>
+      <node ref="U19" pin="6"/>
+      <node ref="U22" pin="6"/>
+      <node ref="U6" pin="61"/>
+      <node ref="TP8" pin="1"/>
+      <node ref="U21" pin="6"/>
+      <node ref="U20" pin="6"/>
+    </net>
+    <net code="22" name="/Sensors and Interfaces/VBUS_DETECT">
+      <node ref="R15" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="U6" pin="55"/>
+    </net>
+    <net code="23" name="/Sensors and Interfaces/~Relay2">
+      <node ref="R73" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="U6" pin="33"/>
+    </net>
+    <net code="24" name="/Power/VBatDiv">
+      <node ref="R3" pin="1"/>
+      <node ref="VBAT_DIV1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U6" pin="14"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="25" name="/IMU_Wake/IMU_INTTERRUPT2">
+      <node ref="U6" pin="47"/>
+      <node ref="U9" pin="9"/>
+    </net>
+    <net code="26" name="/Piezo/PZ_EN">
+      <node ref="U6" pin="35"/>
+      <node ref="G1" pin="4"/>
+      <node ref="U10" pin="3"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="27" name="/LCD/~LCD_RESET">
+      <node ref="P7" pin="3"/>
+      <node ref="U6" pin="51"/>
+    </net>
+    <net code="28" name="/Sensors and Interfaces/USB-">
+      <node ref="R12" pin="2"/>
+      <node ref="U6" pin="6"/>
+    </net>
+    <net code="29" name="/Sensors and Interfaces/USB+">
+      <node ref="R13" pin="2"/>
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="30" name="/Sensors and Interfaces/TMS">
+      <node ref="R4" pin="1"/>
+      <node ref="U6" pin="44"/>
+    </net>
+    <net code="31" name="/Sensors and Interfaces/TCK">
+      <node ref="R5" pin="1"/>
+      <node ref="U6" pin="45"/>
+    </net>
+    <net code="32" name="/Sensors and Interfaces/RESET">
+      <node ref="D5" pin="2"/>
+      <node ref="U6" pin="46"/>
+      <node ref="U6" pin="43"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="33" name="/Sensors and Interfaces/~Relay1">
+      <node ref="U6" pin="34"/>
+      <node ref="R72" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="34" name="/Piezo/~PZ">
+      <node ref="U6" pin="36"/>
+      <node ref="U11" pin="2"/>
+    </net>
+    <net code="35" name="/Piezo/PZ">
+      <node ref="Q7" pin="1"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U11" pin="3"/>
+    </net>
+    <net code="36" name="Net-(JP1-Pad2)">
+      <node ref="JP1" pin="2"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="37" name="Net-(R1-Pad1)">
+      <node ref="U5" pin="5"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="38" name="GND">
+      <node ref="U22" pin="5"/>
+      <node ref="C61" pin="2"/>
+      <node ref="C42" pin="2"/>
+      <node ref="P6" pin="4"/>
+      <node ref="U8" pin="4"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C24" pin="1"/>
+      <node ref="C57" pin="2"/>
+      <node ref="U22" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="C59" pin="1"/>
+      <node ref="C58" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="C50" pin="1"/>
+      <node ref="U20" pin="3"/>
+      <node ref="U21" pin="2"/>
+      <node ref="U21" pin="3"/>
+      <node ref="U20" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="C67" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C68" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="U20" pin="5"/>
+      <node ref="U9" pin="6"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C40" pin="1"/>
+      <node ref="C60" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="R34" pin="2"/>
+      <node ref="U9" pin="7"/>
+      <node ref="U19" pin="2"/>
+      <node ref="U19" pin="3"/>
+      <node ref="C49" pin="1"/>
+      <node ref="U19" pin="5"/>
+      <node ref="R32" pin="2"/>
+      <node ref="R30" pin="2"/>
+      <node ref="U22" pin="3"/>
+      <node ref="U9" pin="3"/>
+      <node ref="C41" pin="2"/>
+      <node ref="U21" pin="5"/>
+      <node ref="P3" pin="5"/>
+      <node ref="P3" pin="3"/>
+      <node ref="R15" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C25" pin="1"/>
+      <node ref="U9" pin="2"/>
+      <node ref="C55" pin="1"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C69" pin="2"/>
+      <node ref="C66" pin="2"/>
+      <node ref="U10" pin="4"/>
+      <node ref="P7" pin="28"/>
+      <node ref="C1" pin="2"/>
+      <node ref="P7" pin="16"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="P7" pin="5"/>
+      <node ref="C16" pin="2"/>
+      <node ref="P7" pin="29"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U11" pin="1"/>
+      <node ref="C56" pin="1"/>
+      <node ref="U11" pin="7"/>
+      <node ref="R9" pin="2"/>
+      <node ref="G1" pin="2"/>
+      <node ref="C54" pin="2"/>
+      <node ref="C47" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U11" pin="9"/>
+      <node ref="C13" pin="2"/>
+      <node ref="R26" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C70" pin="2"/>
+      <node ref="P1" pin="3"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="U6" pin="21"/>
+      <node ref="C28" pin="1"/>
+      <node ref="C34" pin="1"/>
+      <node ref="R43" pin="1"/>
+      <node ref="U6" pin="65"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C33" pin="1"/>
+      <node ref="C39" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="P5" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D4" pin="3"/>
+      <node ref="R46" pin="2"/>
+      <node ref="C29" pin="1"/>
+      <node ref="U6" pin="41"/>
+      <node ref="C20" pin="2"/>
+      <node ref="U6" pin="37"/>
+      <node ref="C46" pin="1"/>
+      <node ref="U12" pin="4"/>
+      <node ref="C26" pin="2"/>
+      <node ref="TP12" pin="1"/>
+      <node ref="TP11" pin="1"/>
+      <node ref="C62" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C37" pin="2"/>
+      <node ref="Q8" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="39" name="+3V3">
+      <node ref="Q1" pin="3"/>
+      <node ref="S1" pin="3"/>
+      <node ref="C46" pin="2"/>
+      <node ref="U9" pin="5"/>
+      <node ref="S1" pin="4"/>
+      <node ref="U12" pin="5"/>
+      <node ref="C62" pin="1"/>
+      <node ref="U12" pin="6"/>
+      <node ref="C25" pin="2"/>
+      <node ref="U9" pin="8"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U6" pin="38"/>
+      <node ref="U8" pin="6"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U6" pin="13"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="C51" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P3" pin="1"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U4" pin="6"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U6" pin="56"/>
+      <node ref="U6" pin="8"/>
+      <node ref="TP15" pin="1"/>
+      <node ref="U7" pin="5"/>
+      <node ref="L2" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="P6" pin="3"/>
+      <node ref="C39" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="5"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="40" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="41" name="+V_chrg">
+      <node ref="C44" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="42" name="+BATT">
+      <node ref="U5" pin="3"/>
+      <node ref="C66" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U10" pin="6"/>
+      <node ref="DS2" pin="2"/>
+      <node ref="JP1" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="R73" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="R72" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C43" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="R44" pin="1"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="43" name="Net-(P1-Pad4)">
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="44" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="45" name="Net-(U6-Pad5)">
+      <node ref="U6" pin="5"/>
+    </net>
+    <net code="46" name="Net-(R26-Pad2)">
+      <node ref="R26" pin="2"/>
+      <node ref="U6" pin="24"/>
+    </net>
+    <net code="47" name="Net-(R25-Pad2)">
+      <node ref="U6" pin="23"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="48" name="Net-(U6-Pad20)">
+      <node ref="U6" pin="20"/>
+    </net>
+    <net code="49" name="/xmc4200/~eeWp">
+      <node ref="U6" pin="54"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="50" name="Net-(U6-Pad31)">
+      <node ref="U6" pin="31"/>
+    </net>
+    <net code="51" name="Net-(C18-Pad1)">
+      <node ref="Y1" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U6" pin="39"/>
+    </net>
+    <net code="52" name="/xmc4200/~eeHold">
+      <node ref="U1" pin="7"/>
+      <node ref="U6" pin="53"/>
+    </net>
+    <net code="53" name="Net-(U6-Pad28)">
+      <node ref="U6" pin="28"/>
+    </net>
+    <net code="54" name="Net-(U6-Pad16)">
+      <node ref="U6" pin="16"/>
+    </net>
+    <net code="55" name="Net-(U6-Pad17)">
+      <node ref="U6" pin="17"/>
+    </net>
+    <net code="56" name="Net-(U6-Pad18)">
+      <node ref="U6" pin="18"/>
+    </net>
+    <net code="57" name="Net-(U6-Pad19)">
+      <node ref="U6" pin="19"/>
+    </net>
+    <net code="58" name="/xmc4200/~eeCs">
+      <node ref="U1" pin="1"/>
+      <node ref="U6" pin="49"/>
+    </net>
+    <net code="59" name="Net-(U6-Pad11)">
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="60" name="Net-(U6-Pad12)">
+      <node ref="U6" pin="12"/>
+    </net>
+    <net code="61" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U6" pin="40"/>
+    </net>
+    <net code="62" name="Net-(C19-Pad1)">
+      <node ref="Y1" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="63" name="/xmc4200/VAREF">
+      <node ref="L2" pin="2"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U6" pin="22"/>
+    </net>
+    <net code="64" name="Net-(C10-Pad1)">
+      <node ref="U6" pin="9"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U6" pin="42"/>
+    </net>
+    <net code="65" name="Net-(D7-Pad1)">
+      <node ref="P5" pin="1"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="66" name="Net-(D8-Pad1)">
+      <node ref="Q3" pin="3"/>
+      <node ref="P5" pin="3"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="67" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="68" name="Net-(D4-Pad2)">
+      <node ref="R13" pin="1"/>
+      <node ref="P2" pin="3"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="69" name="Net-(P2-Pad4)">
+      <node ref="P2" pin="4"/>
+    </net>
+    <net code="70" name="Net-(C22-Pad1)">
+      <node ref="C22" pin="1"/>
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="71" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="L3" pin="1"/>
+    </net>
+    <net code="72" name="Net-(D5-Pad1)">
+      <node ref="P3" pin="10"/>
+      <node ref="D5" pin="1"/>
+      <node ref="P6" pin="5"/>
+    </net>
+    <net code="73" name="Net-(L1-Pad1)">
+      <node ref="P2" pin="5"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="74" name="Net-(P3-Pad7)">
+      <node ref="P3" pin="7"/>
+    </net>
+    <net code="75" name="Net-(P3-Pad6)">
+      <node ref="P3" pin="6"/>
+    </net>
+    <net code="76" name="Net-(P3-Pad8)">
+      <node ref="P3" pin="8"/>
+    </net>
+    <net code="77" name="Net-(P3-Pad9)">
+      <node ref="P3" pin="9"/>
+    </net>
+    <net code="78" name="Net-(L3-Pad2)">
+      <node ref="P2" pin="1"/>
+      <node ref="L3" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="79" name="/Sensors and Interfaces/PowerMagSense2">
+      <node ref="C49" pin="2"/>
+      <node ref="C67" pin="1"/>
+      <node ref="C60" pin="1"/>
+      <node ref="U20" pin="4"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U7" pin="1"/>
+      <node ref="C57" pin="1"/>
+    </net>
+    <net code="80" name="/Sensors and Interfaces/PowerMagSense4">
+      <node ref="C68" pin="1"/>
+      <node ref="U8" pin="1"/>
+      <node ref="C58" pin="1"/>
+      <node ref="C61" pin="1"/>
+      <node ref="C50" pin="2"/>
+      <node ref="U21" pin="4"/>
+      <node ref="U8" pin="2"/>
+    </net>
+    <net code="81" name="/Sensors and Interfaces/PowerMagSense3">
+      <node ref="C59" pin="2"/>
+      <node ref="C38" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U22" pin="4"/>
+    </net>
+    <net code="82" name="Net-(P3-Pad2)">
+      <node ref="P3" pin="2"/>
+      <node ref="P6" pin="1"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="83" name="Net-(P3-Pad4)">
+      <node ref="R5" pin="2"/>
+      <node ref="P6" pin="2"/>
+      <node ref="P3" pin="4"/>
+    </net>
+    <net code="84" name="/Sensors and Interfaces/PowerMagSense1">
+      <node ref="U19" pin="4"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C41" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C21" pin="1"/>
+    </net>
+    <net code="85" name="Net-(Q6-Pad3)">
+      <node ref="R38" pin="2"/>
+      <node ref="Q6" pin="3"/>
+    </net>
+    <net code="86" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3"/>
+      <node ref="R37" pin="2"/>
+    </net>
+    <net code="87" name="Net-(Q4-Pad3)">
+      <node ref="R36" pin="2"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="88" name="Net-(Q6-Pad1)">
+      <node ref="Q6" pin="1"/>
+      <node ref="R35" pin="1"/>
+    </net>
+    <net code="89" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="90" name="Net-(Q4-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="91" name="Net-(DS2-Pad4)">
+      <node ref="DS2" pin="4"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="92" name="Net-(DS2-Pad3)">
+      <node ref="R38" pin="1"/>
+      <node ref="DS2" pin="3"/>
+    </net>
+    <net code="93" name="Net-(DS2-Pad1)">
+      <node ref="R36" pin="1"/>
+      <node ref="DS2" pin="1"/>
+    </net>
+    <net code="94" name="Net-(U9-Pad10)">
+      <node ref="U9" pin="10"/>
+    </net>
+    <net code="95" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="R39" pin="2"/>
+    </net>
+    <net code="96" name="Net-(Q1-Pad1)">
+      <node ref="U9" pin="4"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="97" name="Net-(R17-Pad2)">
+      <node ref="R17" pin="2"/>
+      <node ref="S1" pin="2"/>
+      <node ref="S1" pin="1"/>
+    </net>
+    <net code="98" name="Net-(C31-Pad1)">
+      <node ref="P7" pin="22"/>
+      <node ref="C31" pin="1"/>
+    </net>
+    <net code="99" name="Net-(C33-Pad2)">
+      <node ref="C33" pin="2"/>
+      <node ref="P7" pin="27"/>
+    </net>
+    <net code="100" name="Net-(C29-Pad2)">
+      <node ref="P7" pin="26"/>
+      <node ref="C29" pin="2"/>
+    </net>
+    <net code="101" name="Net-(C35-Pad2)">
+      <node ref="P7" pin="25"/>
+      <node ref="C35" pin="2"/>
+    </net>
+    <net code="102" name="Net-(C32-Pad2)">
+      <node ref="P7" pin="24"/>
+      <node ref="C32" pin="2"/>
+    </net>
+    <net code="103" name="Net-(C34-Pad2)">
+      <node ref="P7" pin="17"/>
+      <node ref="C34" pin="2"/>
+    </net>
+    <net code="104" name="Net-(C27-Pad1)">
+      <node ref="P7" pin="19"/>
+      <node ref="C30" pin="1"/>
+      <node ref="C27" pin="1"/>
+    </net>
+    <net code="105" name="Net-(C27-Pad2)">
+      <node ref="P7" pin="20"/>
+      <node ref="C27" pin="2"/>
+    </net>
+    <net code="106" name="Net-(C28-Pad2)">
+      <node ref="P7" pin="23"/>
+      <node ref="C28" pin="2"/>
+    </net>
+    <net code="107" name="Net-(C30-Pad2)">
+      <node ref="C30" pin="2"/>
+      <node ref="P7" pin="18"/>
+    </net>
+    <net code="108" name="Net-(C31-Pad2)">
+      <node ref="C31" pin="2"/>
+      <node ref="P7" pin="21"/>
+    </net>
+    <net code="109" name="Net-(P7-Pad1)">
+      <node ref="P7" pin="1"/>
+    </net>
+    <net code="110" name="Net-(P7-Pad30)">
+      <node ref="P7" pin="30"/>
+    </net>
+    <net code="111" name="Net-(P4-Pad1)">
+      <node ref="Q8" pin="3"/>
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="112" name="Net-(Q8-Pad1)">
+      <node ref="Q8" pin="1"/>
+      <node ref="R43" pin="2"/>
+      <node ref="R42" pin="1"/>
+    </net>
+    <net code="113" name="Net-(C23-Pad1)">
+      <node ref="P7" pin="15"/>
+      <node ref="C23" pin="1"/>
+      <node ref="U12" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="U12" pin="2"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C37" pin="1"/>
+      <node ref="P7" pin="6"/>
+      <node ref="P7" pin="8"/>
+      <node ref="P7" pin="9"/>
+      <node ref="P7" pin="7"/>
+      <node ref="P7" pin="11"/>
+      <node ref="P7" pin="10"/>
+      <node ref="P7" pin="12"/>
+    </net>
+    <net code="114" name="Net-(P4-Pad2)">
+      <node ref="R44" pin="2"/>
+      <node ref="P4" pin="2"/>
+    </net>
+    <net code="115" name="Net-(C55-Pad2)">
+      <node ref="Q7" pin="3"/>
+      <node ref="C55" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="U16" pin="2"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="116" name="/Piezo/V_Piezo">
+      <node ref="R19" pin="2"/>
+      <node ref="U11" pin="5"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C54" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="C45" pin="1"/>
+      <node ref="U16" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="117" name="Net-(R19-Pad1)">
+      <node ref="U11" pin="8"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="118" name="Net-(R20-Pad2)">
+      <node ref="R20" pin="2"/>
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="119" name="Net-(D2-Pad2)">
+      <node ref="L4" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="G1" pin="1"/>
+    </net>
+    <net code="120" name="Net-(C69-Pad1)">
+      <node ref="U10" pin="2"/>
+      <node ref="U10" pin="1"/>
+      <node ref="C69" pin="1"/>
+      <node ref="C70" pin="1"/>
+      <node ref="L4" pin="1"/>
+      <node ref="G1" pin="5"/>
+    </net>
+    <net code="121" name="Net-(G1-Pad3)">
+      <node ref="R9" pin="1"/>
+      <node ref="G1" pin="3"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="122" name="Net-(C47-Pad2)">
+      <node ref="U11" pin="4"/>
+      <node ref="C47" pin="2"/>
+      <node ref="R7" pin="2"/>
+    </net>
+  </nets>
+</export>

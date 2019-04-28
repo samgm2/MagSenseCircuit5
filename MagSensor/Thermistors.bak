@@ -1,0 +1,315 @@
+EESchema Schematic File Version 2
+LIBS:PZDrive3c-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SamParts
+LIBS:CPU_42A-V1
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 P5
+U 1 1 58805576
+P 4850 1700
+F 0 "P5" H 4850 1850 50  0000 C CNN
+F 1 "Therm_P" V 4950 1700 50  0000 C CNN
+F 2 "SamLib:B2B-ZR_ThermCon" H 4850 1700 50  0001 C CNN
+F 3 "" H 4850 1700 50  0000 C CNN
+	1    4850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR064
+U 1 1 588056CF
+P 4450 1400
+F 0 "#PWR064" H 4450 1250 50  0001 C CNN
+F 1 "+3.3V" H 4450 1540 50  0000 C CNN
+F 2 "" H 4450 1400 50  0000 C CNN
+F 3 "" H 4450 1400 50  0000 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1400 4450 1650
+Wire Wire Line
+	4450 1650 4650 1650
+$Comp
+L R R53
+U 1 1 5880571A
+P 4450 2100
+F 0 "R53" V 4530 2100 50  0000 C CNN
+F 1 "1K (Yageo 0.5%: RT0603DRD071KL)" H 5000 1950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4380 2100 50  0001 C CNN
+F 3 "" H 4450 2100 50  0000 C CNN
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1750 4650 1750
+Wire Wire Line
+	4450 1750 4450 1950
+$Comp
+L GND #PWR065
+U 1 1 588058C3
+P 4450 2400
+F 0 "#PWR065" H 4450 2150 50  0001 C CNN
+F 1 "GND" H 4450 2250 50  0000 C CNN
+F 2 "" H 4450 2400 50  0000 C CNN
+F 3 "" H 4450 2400 50  0000 C CNN
+	1    4450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2250 4450 2400
+$Comp
+L R R50
+U 1 1 588059AD
+P 3900 1750
+F 0 "R50" V 3980 1750 50  0000 C CNN
+F 1 "10K (Yageo: RC0603JR-0710KL)" V 3800 1550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3830 1750 50  0001 C CNN
+F 3 "" H 3900 1750 50  0000 C CNN
+	1    3900 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 4450 1750
+Text HLabel 3300 1750 0    60   Output ~ 0
+ThermP
+Wire Wire Line
+	3750 1750 3300 1750
+$Comp
+L C C8
+U 1 1 58805A55
+P 3600 2100
+F 0 "C8" H 3625 2200 50  0000 L CNN
+F 1 "0.01uF(Yageo:CC0603KRX7R9BB103)" H 2450 2000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3638 1950 50  0001 C CNN
+F 3 "" H 3600 2100 50  0000 C CNN
+	1    3600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1950 3600 1750
+Connection ~ 3600 1750
+Wire Wire Line
+	3600 2250 3600 2350
+Wire Wire Line
+	3600 2350 4450 2350
+Connection ~ 4450 2350
+$Comp
+L CONN_01X02 P6
+U 1 1 5880B403
+P 4900 3550
+F 0 "P6" H 4900 3700 50  0000 C CNN
+F 1 "ThermHB_H" V 5000 3550 50  0000 C CNN
+F 2 "SamLib:B2B-ZR_ThermCon" H 4900 3550 50  0001 C CNN
+F 3 "" H 4900 3550 50  0000 C CNN
+	1    4900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR066
+U 1 1 5880B409
+P 4500 3250
+F 0 "#PWR066" H 4500 3100 50  0001 C CNN
+F 1 "+3.3V" H 4500 3390 50  0000 C CNN
+F 2 "" H 4500 3250 50  0000 C CNN
+F 3 "" H 4500 3250 50  0000 C CNN
+	1    4500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3250 4500 3500
+Wire Wire Line
+	4500 3500 4700 3500
+$Comp
+L R R63
+U 1 1 5880B411
+P 4500 3950
+F 0 "R63" V 4580 3950 50  0000 C CNN
+F 1 "1K (Yageo 0.5%: RT0603DRD071KL)" H 5050 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0000 C CNN
+	1    4500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3600 4700 3600
+Wire Wire Line
+	4500 3600 4500 3800
+$Comp
+L GND #PWR067
+U 1 1 5880B419
+P 4500 4250
+F 0 "#PWR067" H 4500 4000 50  0001 C CNN
+F 1 "GND" H 4500 4100 50  0000 C CNN
+F 2 "" H 4500 4250 50  0000 C CNN
+F 3 "" H 4500 4250 50  0000 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4100 4500 4250
+$Comp
+L R R51
+U 1 1 5880B420
+P 3950 3600
+F 0 "R51" V 4030 3600 50  0000 C CNN
+F 1 "10K (Yageo: RC0603JR-0710KL)" V 3850 3400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3880 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0000 C CNN
+	1    3950 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 3600
+Text HLabel 3350 3600 0    60   Output ~ 0
+ThermHB_H
+Wire Wire Line
+	3800 3600 3350 3600
+$Comp
+L C C53
+U 1 1 5880B429
+P 3650 3950
+F 0 "C53" H 3675 4050 50  0000 L CNN
+F 1 "0.01uF(Yageo:CC0603KRX7R9BB103)" H 2500 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 3800 50  0001 C CNN
+F 3 "" H 3650 3950 50  0000 C CNN
+	1    3650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3800 3650 3600
+Connection ~ 3650 3600
+Wire Wire Line
+	3650 4100 3650 4200
+Wire Wire Line
+	3650 4200 4500 4200
+Connection ~ 4500 4200
+$Comp
+L CONN_01X02 P7
+U 1 1 5880B614
+P 4900 5500
+F 0 "P7" H 4900 5650 50  0000 C CNN
+F 1 "ThermHB_L" V 5000 5500 50  0000 C CNN
+F 2 "SamLib:B2B-ZR_ThermCon" H 4900 5500 50  0001 C CNN
+F 3 "" H 4900 5500 50  0000 C CNN
+	1    4900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR068
+U 1 1 5880B61A
+P 4500 5200
+F 0 "#PWR068" H 4500 5050 50  0001 C CNN
+F 1 "+3.3V" H 4500 5340 50  0000 C CNN
+F 2 "" H 4500 5200 50  0000 C CNN
+F 3 "" H 4500 5200 50  0000 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5200 4500 5450
+Wire Wire Line
+	4500 5450 4700 5450
+$Comp
+L R R64
+U 1 1 5880B622
+P 4500 5900
+F 0 "R64" V 4580 5900 50  0000 C CNN
+F 1 "1K (Yageo 0.5%: RT0603DRD071KL)" H 5050 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4430 5900 50  0001 C CNN
+F 3 "" H 4500 5900 50  0000 C CNN
+	1    4500 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5550 4700 5550
+Wire Wire Line
+	4500 5550 4500 5750
+$Comp
+L GND #PWR069
+U 1 1 5880B62A
+P 4500 6200
+F 0 "#PWR069" H 4500 5950 50  0001 C CNN
+F 1 "GND" H 4500 6050 50  0000 C CNN
+F 2 "" H 4500 6200 50  0000 C CNN
+F 3 "" H 4500 6200 50  0000 C CNN
+	1    4500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6050 4500 6200
+$Comp
+L R R52
+U 1 1 5880B631
+P 3950 5550
+F 0 "R52" V 4030 5550 50  0000 C CNN
+F 1 "10K (Yageo: RC0603JR-0710KL)" V 3850 5350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3880 5550 50  0001 C CNN
+F 3 "" H 3950 5550 50  0000 C CNN
+	1    3950 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 4500 5550
+Text HLabel 3350 5550 0    60   Output ~ 0
+ThermHB_L
+Wire Wire Line
+	3800 5550 3350 5550
+$Comp
+L C C54
+U 1 1 5880B63A
+P 3650 5900
+F 0 "C54" H 3675 6000 50  0000 L CNN
+F 1 "0.01uF(Yageo:CC0603KRX7R9BB103)" H 2500 5800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 5750 50  0001 C CNN
+F 3 "" H 3650 5900 50  0000 C CNN
+	1    3650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5750 3650 5550
+Connection ~ 3650 5550
+Wire Wire Line
+	3650 6050 3650 6150
+Wire Wire Line
+	3650 6150 4500 6150
+Connection ~ 4500 6150
+$EndSCHEMATC

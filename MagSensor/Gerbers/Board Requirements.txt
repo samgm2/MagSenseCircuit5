@@ -1,0 +1,28 @@
+Board Thickness: 0.060"  (+/- 10%)
+
+Number of Layers: 4
+
+Layer order (equal layer spacing):
+	Top
+	Gnd
+	Pwr
+	Bottom
+	
+Files:
+	Drill: 									MagSensor.drl
+	Drill (ALT)							MagSensor.NPTH.drl
+	
+	Bottom Copper Layer:		MagSensor-B.Cu.gbr
+	Solder Mask Bottom: 		MagSensor-B.Mask.gbr
+	Silk Screen Bottom: 		MagSensor-B.Silk.gbr
+	Board Routing:					MagSensor-Edge.Cuts.gbr
+	Top Copper:							MagSensor-F.Cu.gbr
+	Solder Mask Top:				MagSensor-F.Mask.gbr
+	Silk Screem Top:				MagSensor-F-Silk.gbr
+	Ground CopperLayer (2):	MagSensor-GND.Cu.gbr
+	Power Copper Layer (3):	MagSensor-PWR.Cu.gbr
+
+
+For any questions, contact Sam@SamMichael.com
+	Sam Michael
+	Lead Engineer

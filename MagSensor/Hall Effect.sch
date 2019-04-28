@@ -1,0 +1,190 @@
+EESchema Schematic File Version 2
+LIBS:MagSensor-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:SamParts
+LIBS:CPU_42A-V1
+LIBS:MagSensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SS39ET U?
+U 1 1 58AD45BB
+P 4025 2775
+F 0 "U?" H 4025 2975 60  0000 C CNN
+F 1 "SS39ET" H 4025 2575 60  0000 C CNN
+F 2 "" H 4475 2525 60  0001 C CNN
+F 3 "" H 4475 2525 60  0001 C CNN
+	1    4025 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58AD4630
+P 2850 2950
+F 0 "C?" H 2875 3050 50  0000 L CNN
+F 1 "C" H 2875 2850 50  0000 L CNN
+F 2 "" H 2888 2800 50  0000 C CNN
+F 3 "" H 2850 2950 50  0000 C CNN
+	1    2850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AD478B
+P 2850 3275
+F 0 "#PWR?" H 2850 3025 50  0001 C CNN
+F 1 "GND" H 2850 3125 50  0000 C CNN
+F 2 "" H 2850 3275 50  0000 C CNN
+F 3 "" H 2850 3275 50  0000 C CNN
+	1    2850 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3100 2850 3275
+Wire Wire Line
+	2850 1950 2850 2800
+Wire Wire Line
+	2850 2675 3625 2675
+Wire Wire Line
+	3625 2875 3475 2875
+Wire Wire Line
+	3475 2875 3475 3200
+Wire Wire Line
+	3475 3200 2850 3200
+Connection ~ 2850 3200
+$Comp
+L +5V0_S U?
+U 1 1 58AD538E
+P 2850 1950
+F 0 "U?" H 2950 1875 60  0001 C CNN
+F 1 "+5V0_S" H 2825 2125 60  0000 C CNN
+F 2 "" H 2850 1950 60  0001 C CNN
+F 3 "" H 2850 1950 60  0001 C CNN
+	1    2850 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 2675
+$Comp
+L R R?
+U 1 1 58AD540D
+P 5000 3100
+F 0 "R?" V 5080 3100 50  0000 C CNN
+F 1 "33K" V 5000 3100 50  0000 C CNN
+F 2 "" V 4930 3100 50  0000 C CNN
+F 3 "Yageo: RC0402FR-0734KL" H 5000 3100 50  0001 C CNN
+	1    5000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58AD54D0
+P 5000 4000
+F 0 "#PWR?" H 5000 3750 50  0001 C CNN
+F 1 "GND" H 5000 3850 50  0000 C CNN
+F 2 "" H 5000 4000 50  0000 C CNN
+F 3 "" H 5000 4000 50  0000 C CNN
+	1    5000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58AD54EA
+P 5625 3650
+F 0 "C?" H 5650 3750 50  0000 L CNN
+F 1 "C" H 5650 3550 50  0000 L CNN
+F 2 "" H 5663 3500 50  0000 C CNN
+F 3 "" H 5625 3650 50  0000 C CNN
+	1    5625 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2300 5000 2100
+Wire Wire Line
+	5000 2100 2850 2100
+Connection ~ 2850 2100
+Wire Wire Line
+	5000 2600 5000 2950
+Wire Wire Line
+	5000 3250 5000 3500
+Wire Wire Line
+	5000 3800 5000 4000
+Wire Wire Line
+	5625 3800 5625 3900
+Wire Wire Line
+	5625 3900 5000 3900
+Connection ~ 5000 3900
+Wire Wire Line
+	5625 3500 5625 3375
+Wire Wire Line
+	5000 3375 6275 3375
+Connection ~ 5000 3375
+Text HLabel 6275 3375 2    60   Output ~ 0
+VHEF
+Connection ~ 5625 3375
+Wire Wire Line
+	4425 2775 5000 2775
+Connection ~ 5000 2775
+$Comp
+L R R?
+U 1 1 58AD5AC6
+P 5000 3650
+F 0 "R?" V 5080 3650 50  0000 C CNN
+F 1 "68.1K" V 5000 3650 50  0000 C CNN
+F 2 "" V 4930 3650 50  0000 C CNN
+F 3 "Yageo: RC0402FR-0768K1L" H 5000 3650 50  0001 C CNN
+	1    5000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58AD63DF
+P 5000 2450
+F 0 "R?" V 5080 2450 50  0000 C CNN
+F 1 "10K" V 5000 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4930 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+F 4 "Yageo: RC0402JR-0710KL" V 5000 2450 60  0001 C CNN "Manufacturer"
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

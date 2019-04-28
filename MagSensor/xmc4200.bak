@@ -1,0 +1,1173 @@
+EESchema Schematic File Version 4
+LIBS:MagSensor-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 8
+Title "MagSensor 4"
+Date "2017-09-11"
+Rev "A"
+Comp "Maglogix"
+Comment1 ""
+Comment2 ""
+Comment3 "by Sam Michael"
+Comment4 "64 Pin CPU, Hall Effect (4 SOT, 4 SIP, 4 I2C), USB, Accel"
+$EndDescr
+$Comp
+L power:GND #PWR013
+U 1 1 5864A686
+P 6000 6750
+F 0 "#PWR013" H 6000 6500 50  0001 C CNN
+F 1 "GND" H 6000 6600 50  0000 C CNN
+F 2 "" H 6000 6750 50  0000 C CNN
+F 3 "" H 6000 6750 50  0000 C CNN
+	1    6000 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5864A6AE
+P 2500 6400
+F 0 "#PWR014" H 2500 6150 50  0001 C CNN
+F 1 "GND" H 2500 6250 50  0000 C CNN
+F 2 "" H 2500 6400 50  0000 C CNN
+F 3 "" H 2500 6400 50  0000 C CNN
+	1    2500 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5864A6E4
+P 1725 6150
+F 0 "#PWR015" H 1725 5900 50  0001 C CNN
+F 1 "GND" H 1725 6000 50  0000 C CNN
+F 2 "" H 1725 6150 50  0000 C CNN
+F 3 "" H 1725 6150 50  0000 C CNN
+	1    1725 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 5864A6EB
+P 1525 5350
+F 0 "Y1" H 1525 5500 50  0000 C CNN
+F 1 "12MHz" H 1525 5200 50  0000 C CNN
+F 2 "SamLib:Crystal_NX3225" H 1525 5350 50  0001 C CNN
+F 3 "" H 1525 5350 50  0000 C CNN
+F 4 "CX3225GA12000D0PTVCC" H 1525 5350 60  0001 C CNN "MPN"
+	1    1525 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5864A6F2
+P 1725 5800
+F 0 "C18" H 1750 5900 50  0000 L CNN
+F 1 "15pF" H 1825 5800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1763 5650 50  0001 C CNN
+F 3 "" H 1725 5800 50  0001 C CNN
+F 4 "Samsung: CL05C150JB5NNNC" H 1725 5800 60  0001 C CNN "MPN"
+	1    1725 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5864A703
+P 1275 6150
+F 0 "#PWR016" H 1275 5900 50  0001 C CNN
+F 1 "GND" H 1275 6000 50  0000 C CNN
+F 2 "" H 1275 6150 50  0000 C CNN
+F 3 "" H 1275 6150 50  0000 C CNN
+	1    1275 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5864A732
+P 1225 4550
+F 0 "#PWR017" H 1225 4300 50  0001 C CNN
+F 1 "GND" H 1225 4400 50  0000 C CNN
+F 2 "" H 1225 4550 50  0000 C CNN
+F 3 "" H 1225 4550 50  0000 C CNN
+	1    1225 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5864A738
+P 1025 4100
+F 0 "L2" H 1100 3975 50  0000 C CNN
+F 1 "BLM18PG600" H 775 4100 50  0000 C CNN
+F 2 "Inductors:Inductor_Wurth_MAPI-2010" H 1025 4100 50  0001 C CNN
+F 3 "" H 1025 4100 50  0000 C CNN
+F 4 "BLM18PG600" H 1025 4100 60  0001 C CNN "MPN"
+	1    1025 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5864A75F
+P 1025 6150
+F 0 "#PWR018" H 1025 5900 50  0001 C CNN
+F 1 "GND" H 1025 6000 50  0000 C CNN
+F 2 "" H 1025 6150 50  0000 C CNN
+F 3 "" H 1025 6150 50  0000 C CNN
+	1    1025 6150
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2650 2550 0    60   Output ~ 0
+~Relay1
+Text HLabel 2650 2450 0    60   Output ~ 0
+~Relay2
+Text HLabel 2175 5650 0    60   BiDi ~ 0
+RESET
+Text HLabel 2650 5750 0    60   BiDi ~ 0
+TCK
+Text HLabel 2650 5850 0    60   BiDi ~ 0
+TMS
+Text HLabel 5625 5050 2    60   BiDi ~ 0
+USB-
+Text HLabel 5625 5150 2    60   BiDi ~ 0
+USB+
+Text Label 1150 4350 0    60   ~ 0
+VAREF
+$Comp
+L Device:C C20
+U 1 1 58846891
+P 1025 4900
+F 0 "C20" H 1050 5000 50  0000 L CNN
+F 1 "0.1uF" H 1050 4800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1063 4750 50  0001 C CNN
+F 3 "" H 1025 4900 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 1025 4900 60  0001 C CNN "MNP"
+	1    1025 4900
+	-1   0    0    -1  
+$EndComp
+Text Notes 8900 2975 0    60   ~ 0
+CPU Pinout:\n   LCD_A0:   LCD Data/Command\n   nLCD_cs:  SPI cs for LCD\n   nGYRO_cs: SPI cs for GYRO\n   PZ_en:     Enable for Piezo controller\n   SPI_MOSI:  Master In/ Slave Out\n   SPI_CLK:   Clock for SPI\n   ACC_cs:    SPI cs for Accelerometer\n   SPI_MISO:  SPI Master in/Slave out\n   nRelay1:   low Trigger Relay1\n   nRelay2:   low Trigger for Relay2\n   I2C_clk: I2C bus clock\n   I2C_dta: I2C bus data\n   RESET:    cpu reset\n   VBUS_DETECT:  High on USB connect\n   PZ: pwm to drive piezo\n   ~PZ: complement pwm to drive piezo\n   LCD_BL_PWM: pwm drive for backlight\n   VBatDiv: scaled bat voltage (3.3)\n   ChargeStat: high when charged\n   HIB_0: high to trigger hibernation\n   USB -: USB comm\n   USB+: USB comm
+$Comp
+L power:+3.3V #PWR019
+U 1 1 5888987D
+P 1025 3850
+F 0 "#PWR019" H 1025 3700 50  0001 C CNN
+F 1 "+3.3V" H 1025 3990 50  0000 C CNN
+F 2 "" H 1025 3850 50  0000 C CNN
+F 3 "" H 1025 3850 50  0000 C CNN
+	1    1025 3850
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6700 1250 2    60   Output ~ 0
+LED_RED
+Text HLabel 5275 2250 2    60   Output ~ 0
+LED_GRN
+Text HLabel 5275 2150 2    60   Output ~ 0
+LED_BLU
+Text HLabel 1350 1650 0    60   Output ~ 0
+~IMU_CS
+Text HLabel 1350 2350 0    60   Input ~ 0
+SPI_MISO
+Text HLabel 1350 2150 0    60   Output ~ 0
+SPI_CLK
+Text HLabel 1350 2050 0    60   Output ~ 0
+SPI_MOSI
+Text HLabel 5400 3950 2    60   Input ~ 0
+ChargeStat
+Text HLabel 2625 1450 0    60   Output ~ 0
+LCD_A0
+Text HLabel 5400 3650 2    60   Input ~ 0
+VBatDiv
+$Comp
+L MagSensor-rescue:TEST TP15
+U 1 1 58A5399B
+P 7300 5550
+AR Path="/58A5399B" Ref="TP15"  Part="1" 
+AR Path="/58649939/58A5399B" Ref="TP15"  Part="1" 
+F 0 "TP15" H 7300 5775 50  0000 C BNN
+F 1 "3V3" H 7300 5800 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 7300 5550 50  0001 C CNN
+F 3 "" H 7300 5550 50  0000 C CNN
+F 4 "5021" H 7300 5550 60  0001 C CNN "MPN"
+	1    7300 5550
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1350 1550 0    60   Output ~ 0
+~LCD_CS
+Text HLabel 5625 4750 2    60   Input ~ 0
+HIB_IO
+$Comp
+L Device:C C19
+U 1 1 58A82E84
+P 1275 5800
+F 0 "C19" H 1300 5900 50  0000 L CNN
+F 1 "15pF" V 1225 5575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1313 5650 50  0001 C CNN
+F 3 "" H 1275 5800 50  0001 C CNN
+F 4 "Samsung: CL05C150JB5NNNC" H 1275 5800 60  0001 C CNN "MPN"
+	1    1275 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 58A83795
+P 6200 6350
+F 0 "C15" H 6050 6250 50  0000 L CNN
+F 1 "0.1uF" V 6250 6425 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6238 6200 50  0001 C CNN
+F 3 "" H 6200 6350 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 6200 6350 60  0001 C CNN "MNP"
+	1    6200 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 58A84108
+P 6625 6125
+F 0 "C14" H 6475 6050 50  0000 L CNN
+F 1 "0.1uF" V 6675 6200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6663 5975 50  0001 C CNN
+F 3 "" H 6625 6125 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 6625 6125 60  0001 C CNN "MNP"
+	1    6625 6125
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 58A8D592
+P 1925 3900
+F 0 "R11" V 2005 3900 50  0000 C CNN
+F 1 "100K" V 1925 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1855 3900 50  0001 C CNN
+F 3 "" H 1925 3900 50  0001 C CNN
+F 4 "Yageo: RC0402FR-07100KL" V 1925 3900 60  0001 C CNN "Manufacturer"
+	1    1925 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR020
+U 1 1 58A8F7ED
+P 7200 5250
+F 0 "#PWR020" H 7200 5100 50  0001 C CNN
+F 1 "+3.3V" H 7200 5390 50  0000 C CNN
+F 2 "" H 7200 5250 50  0000 C CNN
+F 3 "" H 7200 5250 50  0000 C CNN
+	1    7200 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 58AA7696
+P 2025 5150
+F 0 "R10" V 2105 5150 50  0000 C CNN
+F 1 "499" V 2025 5150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1955 5150 50  0001 C CNN
+F 3 "" H 2025 5150 50  0001 C CNN
+F 4 "Yageo: RC0402FR-07499RL" V 2025 5150 60  0001 C CNN "MPN"
+	1    2025 5150
+	0    -1   1    0   
+$EndComp
+NoConn ~ 2700 4650
+NoConn ~ 2700 4850
+Text HLabel 5400 3250 2    60   Output ~ 0
+~LCD_BACKLIGHT_PWM
+$Comp
+L MagSensor-rescue:TEST TP11
+U 1 1 58ADF2C4
+P 4700 6925
+AR Path="/58ADF2C4" Ref="TP11"  Part="1" 
+AR Path="/58649939/58ADF2C4" Ref="TP11"  Part="1" 
+F 0 "TP11" H 4825 6975 50  0000 C BNN
+F 1 "GND" H 4700 7175 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 4700 6925 50  0001 C CNN
+F 3 "" H 4700 6925 50  0000 C CNN
+	1    4700 6925
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP12
+U 1 1 58ADF6ED
+P 4825 6925
+AR Path="/58ADF6ED" Ref="TP12"  Part="1" 
+AR Path="/58649939/58ADF6ED" Ref="TP12"  Part="1" 
+F 0 "TP12" H 4675 7025 50  0000 C BNN
+F 1 "GND" H 4825 7175 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 4825 6925 50  0001 C CNN
+F 3 "" H 4825 6925 50  0000 C CNN
+	1    4825 6925
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP6
+U 1 1 58AE0767
+P 2200 1425
+AR Path="/58AE0767" Ref="TP6"  Part="1" 
+AR Path="/58649939/58AE0767" Ref="TP6"  Part="1" 
+F 0 "TP6" H 2200 1650 50  0000 C BNN
+F 1 "MOSI" H 2200 1675 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 2200 1425 50  0001 C CNN
+F 3 "" H 2200 1425 50  0000 C CNN
+F 4 "5021" H 2200 1425 60  0001 C CNN "MPN"
+	1    2200 1425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP5
+U 1 1 58AE0A0C
+P 2050 1425
+AR Path="/58AE0A0C" Ref="TP5"  Part="1" 
+AR Path="/58649939/58AE0A0C" Ref="TP5"  Part="1" 
+F 0 "TP5" H 2050 1750 50  0000 C BNN
+F 1 "SPICLK" H 2050 1675 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 2050 1425 50  0001 C CNN
+F 3 "" H 2050 1425 50  0000 C CNN
+F 4 "5021" H 2050 1425 60  0001 C CNN "MPN"
+	1    2050 1425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP2
+U 1 1 58AE0A6D
+P 1600 1425
+AR Path="/58AE0A6D" Ref="TP2"  Part="1" 
+AR Path="/58649939/58AE0A6D" Ref="TP2"  Part="1" 
+F 0 "TP2" H 1600 1650 50  0000 C BNN
+F 1 "IMUcs" H 1600 1675 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 1600 1425 50  0001 C CNN
+F 3 "" H 1600 1425 50  0000 C CNN
+F 4 "5021" H 1600 1425 60  0001 C CNN "MPN"
+	1    1600 1425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP1
+U 1 1 58AE0BC2
+P 1450 1425
+AR Path="/58AE0BC2" Ref="TP1"  Part="1" 
+AR Path="/58649939/58AE0BC2" Ref="TP1"  Part="1" 
+F 0 "TP1" H 1600 1500 50  0000 C BNN
+F 1 "LCDcs" H 1450 1675 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 1450 1425 50  0001 C CNN
+F 3 "" H 1450 1425 50  0000 C CNN
+F 4 "5021" H 1450 1425 60  0001 C CNN "MPN"
+	1    1450 1425
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST VBAT_DIV1
+U 1 1 58AE10C4
+P 5975 3675
+AR Path="/58AE10C4" Ref="VBAT_DIV1"  Part="1" 
+AR Path="/58649939/58AE10C4" Ref="VBAT_DIV1"  Part="1" 
+F 0 "VBAT_DIV1" H 5700 3750 50  0000 C BNN
+F 1 "TEST" H 5975 3925 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 5975 3675 50  0001 C CNN
+F 3 "" H 5975 3675 50  0000 C CNN
+	1    5975 3675
+	-1   0    0    -1  
+$EndComp
+Text HLabel 6700 1350 2    60   Output ~ 0
+PZ
+Text HLabel 2625 1850 0    60   Output ~ 0
+PZ_EN
+Wire Wire Line
+	5200 5650 6200 5650
+Wire Wire Line
+	5200 5750 6000 5750
+Connection ~ 6000 5750
+Wire Wire Line
+	6625 5550 6625 5650
+Wire Wire Line
+	7200 5550 7200 5250
+Wire Wire Line
+	6000 6500 6000 6625
+Wire Wire Line
+	2500 6250 2550 6250
+Wire Wire Line
+	1675 5350 1725 5350
+Wire Wire Line
+	1725 5350 1725 5650
+Wire Wire Line
+	1725 5950 1725 6150
+Connection ~ 1725 5350
+Wire Wire Line
+	1375 5350 1275 5350
+Wire Wire Line
+	1275 5150 1275 5350
+Wire Wire Line
+	1275 5950 1275 6150
+Wire Wire Line
+	2700 5150 2175 5150
+Wire Wire Line
+	1875 5150 1275 5150
+Connection ~ 1275 5350
+Wire Wire Line
+	1025 4250 1025 4350
+Wire Wire Line
+	1025 3850 1025 3900
+Connection ~ 1025 4350
+Wire Wire Line
+	2700 4450 1225 4450
+Wire Wire Line
+	1225 4450 1225 4550
+Wire Wire Line
+	2700 4350 1025 4350
+Wire Wire Line
+	1025 5050 1025 6150
+Wire Wire Line
+	2175 5650 2300 5650
+Wire Wire Line
+	2700 5750 2650 5750
+Wire Wire Line
+	2700 5850 2650 5850
+Wire Wire Line
+	5625 5050 5200 5050
+Wire Wire Line
+	5625 5150 5200 5150
+Wire Wire Line
+	2500 6250 2500 6400
+Wire Wire Line
+	1350 2350 1750 2350
+Wire Wire Line
+	1350 2150 2050 2150
+Wire Wire Line
+	1350 2050 2200 2050
+Wire Wire Line
+	5625 4750 5200 4750
+Wire Wire Line
+	1775 3900 1025 3900
+Connection ~ 1025 3900
+Connection ~ 2300 5650
+Wire Wire Line
+	2075 3900 2300 3900
+Connection ~ 7200 5550
+Wire Wire Line
+	2200 1425 2200 2050
+Connection ~ 2200 2050
+Wire Wire Line
+	2050 1425 2050 2150
+Connection ~ 2050 2150
+Wire Wire Line
+	1450 1425 1450 1550
+Connection ~ 1450 1550
+Wire Wire Line
+	6200 5650 6200 5750
+Wire Wire Line
+	6425 5975 6425 5650
+Connection ~ 6425 5650
+$Comp
+L MagSensor-rescue:XMC4200-F64-RESCUE-MagSensor U6
+U 1 1 59B1C270
+P 4000 4150
+AR Path="/59B1C270" Ref="U6"  Part="1" 
+AR Path="/58649939/59B1C270" Ref="U6"  Part="1" 
+F 0 "U6" H 3700 6380 45  0000 L BNN
+F 1 "XMC4200-F64" H 2900 1850 45  0000 L BNN
+F 2 "SamLib:XMC4200-64LQFP" H 4000 4150 60  0001 C CNN
+F 3 "" H 4000 4150 60  0001 C CNN
+	1    4000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1650 1600 1650
+Wire Wire Line
+	1350 1550 1450 1550
+Wire Wire Line
+	1600 1425 1600 1650
+Connection ~ 1600 1650
+Wire Wire Line
+	5200 1250 6700 1250
+Wire Wire Line
+	5200 2150 5275 2150
+Wire Wire Line
+	5200 2250 5275 2250
+Wire Wire Line
+	5200 3150 5625 3150
+Wire Wire Line
+	5400 3250 5200 3250
+$Comp
+L Device:C C10
+U 1 1 59B6C6D5
+P 5525 6575
+F 0 "C10" H 5375 6475 50  0000 L CNN
+F 1 "0.1uF" V 5575 6650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5563 6425 50  0001 C CNN
+F 3 "" H 5525 6575 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 5525 6575 60  0001 C CNN "MNP"
+	1    5525 6575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 59B6C7CB
+P 5725 6575
+F 0 "C11" H 5550 6475 50  0000 L CNN
+F 1 "0.1uF" V 5775 6650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5763 6425 50  0001 C CNN
+F 3 "" H 5725 6575 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 5725 6575 60  0001 C CNN "MNP"
+	1    5725 6575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 59B6C875
+P 5725 7375
+F 0 "#PWR021" H 5725 7125 50  0001 C CNN
+F 1 "GND" H 5725 7225 50  0000 C CNN
+F 2 "" H 5725 7375 50  0000 C CNN
+F 3 "" H 5725 7375 50  0000 C CNN
+	1    5725 7375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6250 5225 6250
+Wire Wire Line
+	5525 6250 5525 6425
+Wire Wire Line
+	5725 6150 5725 6250
+Wire Wire Line
+	5725 6725 5725 7150
+Wire Wire Line
+	5525 6725 5525 7075
+Wire Wire Line
+	5525 7150 5725 7150
+Connection ~ 5725 7150
+$Comp
+L Device:C C39
+U 1 1 59B6D2C2
+P 7000 5900
+F 0 "C39" H 6825 6000 50  0000 L CNN
+F 1 "0.1uF" H 6675 5900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7038 5750 50  0001 C CNN
+F 3 "" H 7000 5900 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 7000 5900 60  0001 C CNN "MNP"
+	1    7000 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5550 6625 5550
+Wire Wire Line
+	7000 5550 7000 5750
+Wire Wire Line
+	6800 5750 6800 5550
+Connection ~ 6800 5550
+Wire Wire Line
+	6000 5750 6000 6200
+Connection ~ 6625 5550
+Connection ~ 6625 5650
+Connection ~ 6200 5650
+Connection ~ 6200 5750
+Connection ~ 5725 6250
+Connection ~ 5525 6250
+Connection ~ 7000 5550
+Wire Wire Line
+	4825 6925 4825 7025
+Wire Wire Line
+	4825 7075 5225 7075
+Connection ~ 5525 7075
+Wire Wire Line
+	2625 1850 2700 1850
+Wire Wire Line
+	2625 1450 2700 1450
+Wire Wire Line
+	2650 2450 2700 2450
+Wire Wire Line
+	2650 2550 2700 2550
+Wire Wire Line
+	2550 6150 2600 6150
+Wire Wire Line
+	2550 6150 2550 6250
+Connection ~ 2550 6250
+Wire Wire Line
+	2700 6050 2600 6050
+Wire Wire Line
+	2600 6050 2600 6150
+Connection ~ 2600 6150
+Wire Wire Line
+	4700 6925 4700 7025
+Wire Wire Line
+	4700 7025 4825 7025
+Connection ~ 4825 7025
+Wire Wire Line
+	6200 6500 6200 6550
+Wire Wire Line
+	6200 6625 6000 6625
+Connection ~ 6000 6625
+Wire Wire Line
+	6425 6275 6425 6475
+Wire Wire Line
+	6425 6550 6200 6550
+Connection ~ 6200 6550
+Wire Wire Line
+	6625 6275 6625 6400
+Wire Wire Line
+	6625 6475 6425 6475
+Connection ~ 6425 6475
+Wire Wire Line
+	6800 6050 6800 6325
+Wire Wire Line
+	6800 6400 6625 6400
+Connection ~ 6625 6400
+Wire Wire Line
+	7000 6050 7000 6325
+Wire Wire Line
+	7000 6325 6800 6325
+Connection ~ 6800 6325
+Wire Wire Line
+	5200 3950 5400 3950
+Wire Wire Line
+	5200 3650 5300 3650
+Text HLabel 6700 1150 2    60   Output ~ 0
+I2C_0_CLK
+Wire Wire Line
+	5200 1150 5300 1150
+Text HLabel 5875 1750 2    60   BiDi ~ 0
+I2C_0_DTA
+Wire Wire Line
+	5200 1650 6700 1650
+Wire Wire Line
+	5200 1850 6700 1850
+Wire Wire Line
+	5200 1950 6700 1950
+Wire Wire Line
+	5975 3675 5975 3700
+Wire Wire Line
+	5975 3700 5300 3700
+Wire Wire Line
+	5300 3700 5300 3650
+Connection ~ 5300 3650
+Wire Wire Line
+	2300 3900 2300 5650
+Wire Wire Line
+	5200 2550 5725 2550
+Wire Wire Line
+	5200 2050 6700 2050
+Wire Wire Line
+	5200 2650 5625 2650
+Wire Wire Line
+	5200 2750 5625 2750
+$Comp
+L power:+3.3V #PWR023
+U 1 1 59B9E837
+P 6400 4650
+F 0 "#PWR023" H 6400 4500 50  0001 C CNN
+F 1 "+3.3V" H 6400 4790 50  0000 C CNN
+F 2 "" H 6400 4650 50  0000 C CNN
+F 3 "" H 6400 4650 50  0000 C CNN
+	1    6400 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4650 6400 4850
+$Comp
+L Device:C C13
+U 1 1 59B9EC57
+P 6400 5025
+F 0 "C13" H 6300 5125 50  0000 L CNN
+F 1 "0.1uF" H 6075 5025 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6438 4875 50  0001 C CNN
+F 3 "" H 6400 5025 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 6400 5025 60  0001 C CNN "MNP"
+	1    6400 5025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 59B9F0CE
+P 6400 5250
+F 0 "#PWR024" H 6400 5000 50  0001 C CNN
+F 1 "GND" H 6400 5100 50  0000 C CNN
+F 2 "" H 6400 5250 50  0000 C CNN
+F 3 "" H 6400 5250 50  0000 C CNN
+	1    6400 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5175 6400 5200
+Wire Wire Line
+	6200 5175 6200 5200
+Wire Wire Line
+	6200 5200 6400 5200
+Connection ~ 6400 5200
+Wire Wire Line
+	5200 4850 6200 4850
+Connection ~ 6400 4850
+Wire Wire Line
+	6200 4875 6200 4850
+Connection ~ 6200 4850
+Text HLabel 5250 2850 2    60   Input ~ 0
+VBUS_DETECT
+Wire Wire Line
+	5200 2850 5250 2850
+Wire Wire Line
+	6025 3050 5200 3050
+Wire Wire Line
+	2625 2950 2700 2950
+$Comp
+L MagSensor-rescue:TEST TP3
+U 1 1 59BBA954
+P 1750 1425
+AR Path="/59BBA954" Ref="TP3"  Part="1" 
+AR Path="/58649939/59BBA954" Ref="TP3"  Part="1" 
+F 0 "TP3" H 1750 1750 50  0000 C BNN
+F 1 "MISO" H 1750 1675 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 1750 1425 50  0001 C CNN
+F 3 "" H 1750 1425 50  0000 C CNN
+F 4 "5021" H 1750 1425 60  0001 C CNN "MPN"
+	1    1750 1425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1425 1750 2350
+Connection ~ 1750 2350
+$Comp
+L MagSensor-rescue:TEST TP7
+U 1 1 59BBBC89
+P 5300 1000
+AR Path="/59BBBC89" Ref="TP7"  Part="1" 
+AR Path="/58649939/59BBBC89" Ref="TP7"  Part="1" 
+F 0 "TP7" H 5400 1225 50  0000 C BNN
+F 1 "I2C0_C" H 5300 1250 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 5300 1000 50  0001 C CNN
+F 3 "" H 5300 1000 50  0000 C CNN
+F 4 "5021" H 5300 1000 60  0001 C CNN "MPN"
+	1    5300 1000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST TP8
+U 1 1 59BBBE42
+P 5525 1000
+AR Path="/59BBBE42" Ref="TP8"  Part="1" 
+AR Path="/58649939/59BBBE42" Ref="TP8"  Part="1" 
+F 0 "TP8" H 5525 1225 50  0000 C BNN
+F 1 "I2C_D" H 5525 1250 50  0001 C CNN
+F 2 "SamLib:TP_Pin40" H 5525 1000 50  0001 C CNN
+F 3 "" H 5525 1000 50  0000 C CNN
+F 4 "5021" H 5525 1000 60  0001 C CNN "MPN"
+	1    5525 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1000 5300 1150
+Connection ~ 5300 1150
+Wire Wire Line
+	5525 1000 5525 1750
+Connection ~ 5525 1750
+Wire Wire Line
+	5200 1750 5525 1750
+Text HLabel 6700 1550 2    60   Output ~ 0
+I2cPuD
+Text HLabel 6700 1450 2    60   Output ~ 0
+I2cPuC
+Text HLabel 6700 1650 2    60   Output ~ 0
+S_PWR1_EN
+Text HLabel 6700 1850 2    60   Output ~ 0
+S_PWR2_EN
+Text HLabel 6700 1950 2    60   Output ~ 0
+S_PWR3_EN
+Text HLabel 6700 2050 2    60   Output ~ 0
+S_PWR4_EN
+Text HLabel 5400 3450 2    60   Output ~ 0
+LCD_EN
+Text HLabel 5400 3350 2    60   Output ~ 0
+~LCD_RESET
+Wire Wire Line
+	5400 3350 5200 3350
+Wire Wire Line
+	5400 3450 5200 3450
+Wire Wire Line
+	5225 6725 5225 6250
+Connection ~ 5225 6250
+Wire Wire Line
+	5225 7025 5225 7075
+Connection ~ 5225 7075
+$Comp
+L memory:AT25_EEPROM U1
+U 1 1 5B83F1D4
+P 9050 4450
+F 0 "U1" H 8750 4700 50  0000 L CNN
+F 1 "AT25_EEPROM" H 9100 4700 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8700 4400 50  0001 C CNN
+F 3 "Adesto: AT25SF041-SSHD-T" H 8850 4825 50  0000 C CNN
+	1    9050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR026
+U 1 1 5B83F385
+P 9050 3825
+F 0 "#PWR026" H 9050 3675 50  0001 C CNN
+F 1 "+3.3V" H 9050 3965 50  0000 C CNN
+F 2 "" H 9050 3825 50  0000 C CNN
+F 3 "" H 9050 3825 50  0000 C CNN
+	1    9050 3825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B83F406
+P 10725 4475
+F 0 "C1" H 10625 4575 50  0000 L CNN
+F 1 "0.1uF" H 10400 4475 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10763 4325 50  0001 C CNN
+F 3 "" H 10725 4475 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 10725 4475 60  0001 C CNN "MNP"
+	1    10725 4475
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5B83F4FB
+P 9050 5100
+F 0 "#PWR027" H 9050 4850 50  0001 C CNN
+F 1 "GND" H 9050 4950 50  0000 C CNN
+F 2 "" H 9050 5100 50  0000 C CNN
+F 3 "" H 9050 5100 50  0000 C CNN
+	1    9050 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4750 9050 5050
+Wire Wire Line
+	9050 3825 9050 3875
+Wire Wire Line
+	10725 4325 10725 3875
+Wire Wire Line
+	10725 3875 9050 3875
+Connection ~ 9050 3875
+Wire Wire Line
+	10725 4625 10725 5050
+Wire Wire Line
+	10725 5050 9050 5050
+Connection ~ 9050 5050
+Text HLabel 6025 3050 2    60   Input ~ 0
+HIB_IO
+Text HLabel 9650 4450 2    60   Input ~ 0
+SPI_MOSI
+Text HLabel 9650 4550 2    60   Output ~ 0
+SPI_MISO
+Text HLabel 9650 4350 2    60   Input ~ 0
+SPI_CLK
+Wire Wire Line
+	9450 4350 9650 4350
+Wire Wire Line
+	9450 4450 9650 4450
+Wire Wire Line
+	9450 4550 9650 4550
+$Comp
+L Device:C C5
+U 1 1 5B851815
+P 5225 6875
+F 0 "C5" H 5125 6975 50  0000 L CNN
+F 1 "4.7uF" H 5250 6775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5263 6725 50  0001 C CNN
+F 3 "" H 5225 6875 50  0001 C CNN
+F 4 "Samsung: CL10A475MQ8NNNC" H 5225 6875 60  0001 C CNN "MPN"
+	1    5225 6875
+	1    0    0    -1  
+$EndComp
+Text HLabel 2625 1950 0    60   Output ~ 0
+~PZ
+Wire Wire Line
+	2625 1950 2700 1950
+Text Label 7975 4550 0    60   ~ 0
+~eeCs
+Text Label 7975 4350 0    60   ~ 0
+~eeWp
+Text Label 7975 4450 0    60   ~ 0
+~eeHold
+Wire Wire Line
+	7975 4350 8650 4350
+Wire Wire Line
+	7975 4450 8650 4450
+Wire Wire Line
+	7975 4550 8650 4550
+Text Label 5625 3150 2    60   ~ 0
+~eeCs
+Text Label 5625 2650 2    60   ~ 0
+~eeHold
+Text Label 5625 2750 2    60   ~ 0
+~eeWp
+Wire Wire Line
+	6000 5750 6200 5750
+Wire Wire Line
+	1725 5350 2700 5350
+Wire Wire Line
+	1275 5350 1275 5650
+Wire Wire Line
+	1025 4350 1025 4750
+Wire Wire Line
+	1025 3900 1025 3950
+Wire Wire Line
+	2300 5650 2700 5650
+Wire Wire Line
+	7200 5550 7300 5550
+Wire Wire Line
+	2200 2050 2700 2050
+Wire Wire Line
+	2050 2150 2700 2150
+Wire Wire Line
+	1450 1550 2700 1550
+Wire Wire Line
+	6425 5650 6625 5650
+Wire Wire Line
+	1600 1650 2700 1650
+Wire Wire Line
+	5725 7150 5725 7375
+Wire Wire Line
+	6800 5550 7000 5550
+Wire Wire Line
+	6625 5550 6800 5550
+Wire Wire Line
+	6625 5650 6625 5975
+Wire Wire Line
+	6200 5650 6425 5650
+Wire Wire Line
+	6200 5750 6200 6200
+Wire Wire Line
+	5725 6250 5725 6425
+Wire Wire Line
+	5525 6250 5725 6250
+Wire Wire Line
+	7000 5550 7200 5550
+Wire Wire Line
+	5525 7075 5525 7150
+Wire Wire Line
+	2550 6250 2700 6250
+Wire Wire Line
+	2600 6150 2700 6150
+Wire Wire Line
+	4825 7025 4825 7075
+Wire Wire Line
+	6000 6625 6000 6750
+Wire Wire Line
+	6200 6550 6200 6625
+Wire Wire Line
+	6425 6475 6425 6550
+Wire Wire Line
+	6625 6400 6625 6475
+Wire Wire Line
+	6800 6325 6800 6400
+Wire Wire Line
+	5300 3650 5400 3650
+Wire Wire Line
+	6400 5200 6400 5250
+Wire Wire Line
+	6400 4850 6400 4875
+Wire Wire Line
+	6200 4850 6400 4850
+Wire Wire Line
+	1750 2350 2700 2350
+Wire Wire Line
+	5300 1150 6700 1150
+Wire Wire Line
+	5525 1750 5875 1750
+Wire Wire Line
+	5225 6250 5525 6250
+Wire Wire Line
+	5225 7075 5525 7075
+Wire Wire Line
+	9050 3875 9050 4150
+Wire Wire Line
+	9050 5050 9050 5100
+Wire Wire Line
+	5200 6150 5725 6150
+$Comp
+L Device:C C16
+U 1 1 5C318EAA
+P 6000 6350
+F 0 "C16" H 5900 6450 50  0000 L CNN
+F 1 "4.7uF" H 5775 6275 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6038 6200 50  0001 C CNN
+F 3 "" H 6000 6350 50  0001 C CNN
+F 4 "Samsung: CL10A475MQ8NNNC" H 6000 6350 60  0001 C CNN "MPN"
+	1    6000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 5C318F80
+P 6425 6125
+F 0 "C51" H 6325 6225 50  0000 L CNN
+F 1 "4.7uF" H 6300 6025 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6463 5975 50  0001 C CNN
+F 3 "" H 6425 6125 50  0001 C CNN
+F 4 "Samsung: CL10A475MQ8NNNC" H 6425 6125 60  0001 C CNN "MPN"
+	1    6425 6125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5C31900A
+P 6800 5900
+F 0 "C17" H 6700 6000 50  0000 L CNN
+F 1 "4.7uF" H 6725 5800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6838 5750 50  0001 C CNN
+F 3 "" H 6800 5900 50  0001 C CNN
+F 4 "Samsung: CL10A475MQ8NNNC" H 6800 5900 60  0001 C CNN "MPN"
+	1    6800 5900
+	1    0    0    -1  
+$EndComp
+Text HLabel 5250 2950 2    60   Output ~ 0
+IMU_INTTERRUPT2
+Wire Wire Line
+	5200 2950 5250 2950
+$Comp
+L Device:C C12
+U 1 1 5C6E9B97
+P 6200 5025
+F 0 "C12" H 6100 5125 50  0000 L CNN
+F 1 "4.7uF" H 6125 4925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6238 4875 50  0001 C CNN
+F 3 "" H 6200 5025 50  0001 C CNN
+F 4 "Samsung: CL10A475MQ8NNNC" H 6200 5025 60  0001 C CNN "MPN"
+	1    6200 5025
+	1    0    0    -1  
+$EndComp
+Text HLabel 5725 2550 2    60   Output ~ 0
+~vPCS
+Text HLabel 2625 2950 0    60   Output ~ 0
+vPU~D
+$Comp
+L MagSensor-rescue:TEST MP3
+U 1 1 5C8D3490
+P 6575 3625
+F 0 "MP3" H 6500 3875 50  0000 L CNN
+F 1 "TEST" H 6653 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6653 3628 50  0001 L CNN
+F 3 "" H 6575 3625 50  0000 C CNN
+	1    6575 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP4
+U 1 1 5C8DC51C
+P 6750 3625
+F 0 "MP4" H 6675 3875 50  0000 L CNN
+F 1 "TEST" H 6828 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6828 3628 50  0001 L CNN
+F 3 "" H 6750 3625 50  0000 C CNN
+	1    6750 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP5
+U 1 1 5C8DC58C
+P 6925 3625
+F 0 "MP5" H 6850 3875 50  0000 L CNN
+F 1 "TEST" H 7003 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7003 3628 50  0001 L CNN
+F 3 "" H 6925 3625 50  0000 C CNN
+	1    6925 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP6
+U 1 1 5C8DC5F2
+P 7100 3625
+F 0 "MP6" H 7025 3875 50  0000 L CNN
+F 1 "TEST" H 7178 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7178 3628 50  0001 L CNN
+F 3 "" H 7100 3625 50  0000 C CNN
+	1    7100 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP7
+U 1 1 5C8DC658
+P 7275 3625
+F 0 "MP7" H 7200 3875 50  0000 L CNN
+F 1 "TEST" H 7353 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7353 3628 50  0001 L CNN
+F 3 "" H 7275 3625 50  0000 C CNN
+	1    7275 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP8
+U 1 1 5C8DC6C2
+P 7450 3625
+F 0 "MP8" H 7375 3875 50  0000 L CNN
+F 1 "TEST" H 7528 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7528 3628 50  0001 L CNN
+F 3 "" H 7450 3625 50  0000 C CNN
+	1    7450 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L MagSensor-rescue:TEST MP9
+U 1 1 5C8DC734
+P 7625 3625
+F 0 "MP9" H 7550 3875 50  0000 L CNN
+F 1 "TEST" H 7703 3674 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7703 3628 50  0001 L CNN
+F 3 "" H 7625 3625 50  0000 C CNN
+	1    7625 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3750 6575 3750
+Wire Wire Line
+	6575 3750 6575 3625
+Wire Wire Line
+	5200 3850 6750 3850
+Wire Wire Line
+	6750 3850 6750 3625
+Wire Wire Line
+	5200 4050 6925 4050
+Wire Wire Line
+	6925 4050 6925 3625
+Wire Wire Line
+	5200 4150 7100 4150
+Wire Wire Line
+	7100 4150 7100 3625
+Wire Wire Line
+	5200 4250 7275 4250
+Wire Wire Line
+	7275 4250 7275 3625
+Wire Wire Line
+	5200 4350 7450 4350
+Wire Wire Line
+	7450 4350 7450 3625
+Wire Wire Line
+	5200 4450 7625 4450
+Wire Wire Line
+	7625 4450 7625 3625
+$Comp
+L MagSensor-rescue:TEST MP1
+U 1 1 5C91A1F2
+P 700 1600
+F 0 "MP1" H 625 1850 50  0000 L CNN
+F 1 "TEST" H 778 1649 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 778 1603 50  0001 L CNN
+F 3 "" H 700 1600 50  0000 C CNN
+	1    700  1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1600 700  1750
+Wire Wire Line
+	700  1750 2700 1750
+$Comp
+L MagSensor-rescue:TEST MP2
+U 1 1 5C923245
+P 700 2100
+F 0 "MP2" H 625 2350 50  0000 L CNN
+F 1 "TEST" H 778 2149 50  0001 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 778 2103 50  0001 L CNN
+F 3 "" H 700 2100 50  0000 C CNN
+	1    700  2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2100 700  2250
+Wire Wire Line
+	700  2250 2700 2250
+Wire Wire Line
+	5200 1550 6700 1550
+Wire Wire Line
+	5200 1450 6700 1450
+Wire Wire Line
+	5200 1350 6700 1350
+$EndSCHEMATC

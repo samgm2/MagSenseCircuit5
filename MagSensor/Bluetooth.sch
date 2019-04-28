@@ -1,0 +1,191 @@
+EESchema Schematic File Version 2
+LIBS:MagSensor-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LSM330
+LIBS:SamParts
+LIBS:MagSensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_BM_S02 U1
+U 1 1 5863E544
+P 6700 4300
+F 0 "U1" H 6650 4850 45  0000 L BNN
+F 1 "RF_BM_S02" H 6500 3700 45  0000 L BNN
+F 2 "SamLib:RF_BM_S02" H 6700 4300 60  0001 C CNN
+F 3 "https://www.futurashop.it/image/catalog/data/Download/RF-BM-S02.pdf" H 6700 4300 60  0001 C CNN
+F 4 "RF_BM_S02" H 6700 4300 60  0001 C CNN "MPN"
+	1    6700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5863E64A
+P 3350 5175
+F 0 "#PWR01" H 3350 4925 50  0001 C CNN
+F 1 "GND" H 3350 5025 50  0000 C CNN
+F 2 "" H 3350 5175 50  0000 C CNN
+F 3 "" H 3350 5175 50  0000 C CNN
+	1    3350 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR02
+U 1 1 586428FA
+P 3700 3650
+F 0 "#PWR02" H 3700 3500 50  0001 C CNN
+F 1 "+3V3" H 3700 3790 50  0000 C CNN
+F 2 "" H 3700 3650 50  0000 C CNN
+F 3 "" H 3700 3650 50  0000 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5864291A
+P 3350 4350
+F 0 "C1" H 3250 4275 50  0000 L CNN
+F 1 "470pF (DNP)" H 2800 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3388 4200 50  0001 C CNN
+F 3 "" H 3350 4350 50  0001 C CNN
+F 4 "Yageo: CC0402KRX7R9BB471" H 3350 4350 60  0001 C CNN "MPN"
+	1    3350 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6000 4100
+NoConn ~ 6000 4200
+NoConn ~ 6000 4500
+NoConn ~ 6000 4600
+NoConn ~ 6000 4700
+NoConn ~ 7400 4700
+NoConn ~ 7400 4600
+NoConn ~ 7400 4500
+NoConn ~ 7400 4400
+Text HLabel 5850 4300 0    60   Input ~ 0
+~BT_RESET
+Text HLabel 4900 4400 0    60   Input ~ 0
+~BT_ENABLE
+Wire Wire Line
+	5850 4300 6000 4300
+Wire Wire Line
+	4900 4400 6000 4400
+Wire Wire Line
+	5150 4350 5150 4400
+Connection ~ 5150 4400
+Text HLabel 7750 4000 2    60   Input ~ 0
+BT_TXD
+Text HLabel 7750 4100 2    60   Output ~ 0
+BT_RXD
+Text HLabel 7750 4300 2    60   Input ~ 0
+~BT_CTS
+Text HLabel 7750 4200 2    60   Output ~ 0
+~BT_RTS
+Wire Wire Line
+	7400 4000 7750 4000
+Wire Wire Line
+	7400 4100 7750 4100
+Wire Wire Line
+	7400 4200 7750 4200
+Wire Wire Line
+	7400 4300 7750 4300
+NoConn ~ 7400 3900
+$Comp
+L GND #PWR03
+U 1 1 58A643E5
+P 5950 3700
+F 0 "#PWR03" H 5950 3450 50  0001 C CNN
+F 1 "GND" H 5950 3550 50  0000 C CNN
+F 2 "" H 5950 3700 50  0000 C CNN
+F 3 "" H 5950 3700 50  0000 C CNN
+	1    5950 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3900 5950 3900
+Wire Wire Line
+	5950 3900 5950 3700
+Wire Wire Line
+	3350 4500 3350 5175
+Wire Wire Line
+	3700 4500 3700 4900
+Wire Wire Line
+	3700 4900 3350 4900
+Connection ~ 3350 4900
+Wire Wire Line
+	3700 3650 3700 4200
+Wire Wire Line
+	3700 4000 6000 4000
+Wire Wire Line
+	5150 4050 5150 4000
+Connection ~ 5150 4000
+Connection ~ 3700 4000
+Wire Wire Line
+	3350 4200 3350 3900
+Wire Wire Line
+	3350 3900 3700 3900
+Connection ~ 3700 3900
+$Comp
+L C C2
+U 1 1 58AA823D
+P 3700 4350
+F 0 "C2" H 3600 4450 50  0000 L CNN
+F 1 "0.1uF" H 3750 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 3738 4200 50  0001 C CNN
+F 3 "" H 3700 4350 50  0001 C CNN
+F 4 "Murata: GRM155R71C104KA88J" H 3700 4350 60  0001 C CNN "MPN"
+	1    3700 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 58BCA07C
+P 5150 4200
+F 0 "R1" V 5230 4200 50  0000 C CNN
+F 1 "100K" V 5150 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5080 4200 50  0001 C CNN
+F 3 "" H 5150 4200 50  0001 C CNN
+F 4 "Yageo: RT0402DRD07100KL" V 5150 4200 60  0001 C CNN "MPN"
+	1    5150 4200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

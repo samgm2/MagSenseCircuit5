@@ -1,0 +1,4 @@
+Put PS FETS on single Heatsink
+Add PS Thermistor
+
+Add MOSFET thermistors

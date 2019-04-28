@@ -1,0 +1,290 @@
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\sym-lib-table” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\sym-lib-table-2019-01-02-15-06-53”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\MagSensor-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\Power.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\Power-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\xmc4200.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\xmc4200-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\LEDs.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\LEDs-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\IMU.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\IMU-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\LCD.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\LCD-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\Sensors_Interfaces.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\Sensors_Interfaces-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\Piezo.sch” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\Piezo-2019-01-02-15-06-53.sch”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor.pro” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\MagSensor-2019-01-02-15-06-53.pro”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor-cache.lib” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\MagSensor-cache-2019-01-02-15-06-53.lib”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor-rescue.lib” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\MagSensor-rescue-2019-01-02-15-06-53.lib”.
+Info: Backing up file “D:\CES\Circuits\MagSensor5a\MagSensor4L\MagSensor-rescue.dcm” to file “D:\CES\Circuits\MagSensor5a\MagSensor4L\rescue-backup\MagSensor-rescue-2019-01-02-15-06-53.dcm”.
+Info: Adding library “MagSensor-rescue”, file “${KIPRJMOD}/MagSensor-rescue.lib” to project symbol library table.
+Info: Adding library “transistors”, file “${KICAD_SYMBOL_DIR}/transistors.lib” to project symbol library table.
+Info: Adding library “conn”, file “${KICAD_SYMBOL_DIR}/conn.lib” to project symbol library table.
+Info: Adding library “regul”, file “${KICAD_SYMBOL_DIR}/regul.lib” to project symbol library table.
+Info: Adding library “cmos4000”, file “${KICAD_SYMBOL_DIR}/cmos4000.lib” to project symbol library table.
+Info: Adding library “adc-dac”, file “${KICAD_SYMBOL_DIR}/adc-dac.lib” to project symbol library table.
+Info: Adding library “memory”, file “${KICAD_SYMBOL_DIR}/memory.lib” to project symbol library table.
+Info: Adding library “xilinx”, file “${KICAD_SYMBOL_DIR}/xilinx.lib” to project symbol library table.
+Info: Adding library “microcontrollers”, file “${KICAD_SYMBOL_DIR}/microcontrollers.lib” to project symbol library table.
+Info: Adding library “dsp”, file “${KICAD_SYMBOL_DIR}/dsp.lib” to project symbol library table.
+Info: Adding library “microchip”, file “${KICAD_SYMBOL_DIR}/microchip.lib” to project symbol library table.
+Info: Adding library “analog_switches”, file “${KICAD_SYMBOL_DIR}/analog_switches.lib” to project symbol library table.
+Info: Adding library “motorola”, file “${KICAD_SYMBOL_DIR}/motorola.lib” to project symbol library table.
+Info: Adding library “texas”, file “${KICAD_SYMBOL_DIR}/texas.lib” to project symbol library table.
+Info: Adding library “intel”, file “${KICAD_SYMBOL_DIR}/intel.lib” to project symbol library table.
+Info: Adding library “digital-audio”, file “${KICAD_SYMBOL_DIR}/digital-audio.lib” to project symbol library table.
+Info: Adding library “philips”, file “${KICAD_SYMBOL_DIR}/philips.lib” to project symbol library table.
+Info: Adding library “display”, file “${KICAD_SYMBOL_DIR}/display.lib” to project symbol library table.
+Info: Adding library “cypress”, file “${KICAD_SYMBOL_DIR}/cypress.lib” to project symbol library table.
+Info: Adding library “siliconi”, file “${KICAD_SYMBOL_DIR}/siliconi.lib” to project symbol library table.
+Info: Adding library “opto”, file “${KICAD_SYMBOL_DIR}/opto.lib” to project symbol library table.
+Info: Adding library “atmel”, file “${KICAD_SYMBOL_DIR}/atmel.lib” to project symbol library table.
+Info: Adding library “contrib”, file “${KICAD_SYMBOL_DIR}/contrib.lib” to project symbol library table.
+Info: Adding library “valves”, file “${KICAD_SYMBOL_DIR}/valves.lib” to project symbol library table.
+Info: Adding library “LSM330”, file “U:\Downloaded Parts\LSM330\LSM330.lib” to project symbol library table.
+Info: Adding library “SamParts”, file “U:\Libraries\SamParts.lib” to project symbol library table.
+Info: Adding library “CPU_42A-V1”, file “U:\Libraries\CPU_42A-V1.lib” to project symbol library table.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “MCP73831-2AC” mapped to symbol library “SamParts”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “TCR2EE_EF-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “+V_chrg” mapped to symbol library “SamParts”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “Jumper_NO_Small” mapped to symbol library “Device”.
+Symbol “CONN_01X04” mapped to symbol library “conn”.
+Symbol “PWR_FLAG” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “Crystal” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “L” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “XMC4200-F64-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “TEST” mapped to symbol library “MagSensor-rescue”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “AT25_EEPROM” mapped to symbol library “memory”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “CLVBA_RGB_LED-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “BC849” mapped to symbol library “transistors”.
+Symbol “BC849” mapped to symbol library “transistors”.
+Symbol “BC849” mapped to symbol library “transistors”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “LSM330” mapped to symbol library “LSM330”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “ESWITCH_T_GULL-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “Q_PNP_BEC” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “Q_NPN_BEC” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “ER-CON2.0-2P-SMD” mapped to symbol library “SamParts”.
+Symbol “PWR_FLAG” mapped to symbol library “power”.
+Symbol “SFV30R-4STBE1HLF” mapped to symbol library “SamParts”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “Ferrite_Bead” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “PGM_DBG-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “D” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+V_chrg” mapped to symbol library “SamParts”.
+Symbol “ESD5V3U2U-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “USB_OTG-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “MNT” mapped to symbol library “MagSensor-rescue”.
+Symbol “MNT” mapped to symbol library “MagSensor-rescue”.
+Symbol “MNT” mapped to symbol library “MagSensor-rescue”.
+Symbol “PWR_FLAG” mapped to symbol library “power”.
+Symbol “D” mapped to symbol library “Device”.
+Symbol “MNT” mapped to symbol library “MagSensor-rescue”.
+Symbol “Q_PNP_BEC” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “D” mapped to symbol library “Device”.
+Symbol “+BATT” mapped to symbol library “power”.
+Symbol “CONN_01X03” mapped to symbol library “conn”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “Q_PNP_BEC” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “D” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “TLV493D-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “TLV493D-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “TLV493D-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “TLV493D-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “CONN_01X05” mapped to symbol library “conn”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “FIDUCIAL” mapped to symbol library “CPU_42A-V1”.
+Symbol “FIDUCIAL” mapped to symbol library “CPU_42A-V1”.
+Symbol “SiP32510-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “SiP32510-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “SiP32510-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “SiP32510-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+3.3V” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “Ferrite_Bead” mapped to symbol library “Device”.
+Symbol “PWR_FLAG” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “PiezoTransducer” mapped to symbol library “SamParts”.
+Symbol “A4953” mapped to symbol library “SamParts”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “AP3012” mapped to symbol library “SamParts”.
+Symbol “D_Schottky” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “PWR_FLAG” mapped to symbol library “power”.
+Symbol “L” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “SiP32510-RESCUE-MagSensor” mapped to symbol library “MagSensor-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “+BATT” mapped to symbol library “power”.
+Info: Symbol library table mapping complete!
