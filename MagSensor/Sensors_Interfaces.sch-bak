@@ -2424,27 +2424,4 @@ Wire Wire Line
 Connection ~ 15200 3725
 Wire Wire Line
 	15200 3725 15500 3725
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5E364957
-P 14700 4575
-F 0 "J2" H 14618 4892 50  0000 C CNN
-F 1 "Conn_01x04" H 14618 4801 50  0000 C CNN
-F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 14700 4575 50  0001 C CNN
-F 3 "~" H 14700 4575 50  0001 C CNN
-	1    14700 4575
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	14900 4475 15400 4475
-Connection ~ 15400 4475
-Wire Wire Line
-	14900 4575 15200 4575
-Connection ~ 15200 4575
-Wire Wire Line
-	14900 4675 15125 4675
-Connection ~ 15125 4675
-Wire Wire Line
-	14900 4775 15400 4775
-Connection ~ 15400 4775
 $EndSCHEMATC

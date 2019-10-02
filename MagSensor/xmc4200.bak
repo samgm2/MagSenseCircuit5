@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:MagSensor-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -783,17 +783,6 @@ Wire Wire Line
 	5225 7025 5225 7075
 Connection ~ 5225 7075
 $Comp
-L memory:AT25_EEPROM U1
-U 1 1 5B83F1D4
-P 9050 4450
-F 0 "U1" H 8750 4700 50  0000 L CNN
-F 1 "AT25_EEPROM" H 9100 4700 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8700 4400 50  0001 C CNN
-F 3 "Adesto: AT25SF041-SSHD-T" H 8850 4825 50  0000 C CNN
-	1    9050 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR026
 U 1 1 5B83F385
 P 9050 3825
@@ -1134,40 +1123,29 @@ Wire Wire Line
 	5200 4450 7625 4450
 Wire Wire Line
 	7625 4450 7625 3625
-$Comp
-L MagSensor-rescue:TEST MP1
-U 1 1 5C91A1F2
-P 700 1600
-F 0 "MP1" H 625 1850 50  0000 L CNN
-F 1 "TEST" H 778 1649 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 778 1603 50  0001 L CNN
-F 3 "" H 700 1600 50  0000 C CNN
-	1    700  1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1600 700  1750
-Wire Wire Line
-	700  1750 2700 1750
-$Comp
-L MagSensor-rescue:TEST MP2
-U 1 1 5C923245
-P 700 2100
-F 0 "MP2" H 625 2350 50  0000 L CNN
-F 1 "TEST" H 778 2149 50  0001 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 778 2103 50  0001 L CNN
-F 3 "" H 700 2100 50  0000 C CNN
-	1    700  2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  2100 700  2250
-Wire Wire Line
-	700  2250 2700 2250
 Wire Wire Line
 	5200 1550 6700 1550
 Wire Wire Line
 	5200 1450 6700 1450
 Wire Wire Line
 	5200 1350 6700 1350
+$Comp
+L Memory_EEPROM:AT25xxx U1
+U 1 1 5D835571
+P 9050 4450
+F 0 "U1" H 9050 4931 50  0000 C CNN
+F 1 "AT25xxx" H 9050 4840 50  0000 C CNN
+F 2 "Package_SO:HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm" H 9050 4450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 9050 4450 50  0001 C CNN
+	1    9050 4450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1350 2250 0    60   Output ~ 0
+S_PWR_M1_EN
+Text HLabel 1350 1750 0    60   Output ~ 0
+S_PWR_M2_EN
+Wire Wire Line
+	1350 1750 2700 1750
+Wire Wire Line
+	1350 2250 2700 2250
 $EndSCHEMATC

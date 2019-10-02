@@ -1,2 +1,3 @@
 (fp_lib_table
+  (lib (name SamLib)(type KiCad)(uri U:/SamLib.pretty)(options "")(descr ""))
 )
