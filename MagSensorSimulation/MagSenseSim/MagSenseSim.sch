@@ -1,0 +1,273 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Instrumentation:AD8230 U2
+U 1 1 5DC99C92
+P 4850 3400
+F 0 "U2" H 5194 3446 50  0000 L CNN
+F 1 "AD8230" H 5194 3355 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 2850 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8230.pdf" H 4750 3500 50  0001 C CNN
+	1    4850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5DC9A1DD
+P 2700 3750
+F 0 "V1" H 2928 3796 50  0000 L CNN
+F 1 "VSOURCE" H 2928 3705 50  0000 L CNN
+F 2 "" H 2700 3750 50  0001 C CNN
+F 3 "~" H 2700 3750 50  0001 C CNN
+	1    2700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3450 2700 3300
+$Comp
+L pspice:CAP C1
+U 1 1 5DC9AB9B
+P 3200 3300
+F 0 "C1" V 2885 3300 50  0000 C CNN
+F 1 "0.1uf" V 2976 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3200 3300 50  0001 C CNN
+F 3 "~" H 3200 3300 50  0001 C CNN
+	1    3200 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:CAP C2
+U 1 1 5DC9C0DB
+P 3200 4250
+F 0 "C2" V 2885 4250 50  0000 C CNN
+F 1 "0.1uf" V 2976 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3200 4250 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+	1    3200 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 4050 2700 4250
+Wire Wire Line
+	2700 4250 2950 4250
+Wire Wire Line
+	3450 4250 3550 4250
+Wire Wire Line
+	3950 4250 3950 3500
+Wire Wire Line
+	3950 3500 4550 3500
+Wire Wire Line
+	3450 3300 4100 3300
+Wire Wire Line
+	2950 3300 2700 3300
+$Comp
+L power:+5V #PWR0101
+U 1 1 5DC9DD19
+P 700 2300
+F 0 "#PWR0101" H 700 2150 50  0001 C CNN
+F 1 "+5V" H 715 2473 50  0000 C CNN
+F 2 "" H 700 2300 50  0001 C CNN
+F 3 "" H 700 2300 50  0001 C CNN
+	1    700  2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DC9E453
+P 1500 5450
+F 0 "#PWR0102" H 1500 5200 50  0001 C CNN
+F 1 "GND" H 1505 5277 50  0000 C CNN
+F 2 "" H 1500 5450 50  0001 C CNN
+F 3 "" H 1500 5450 50  0001 C CNN
+	1    1500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DC9F7D8
+P 900 2700
+F 0 "R1" V 693 2700 50  0000 C CNN
+F 1 "10000" V 784 2700 50  0000 C CNN
+F 2 "" V 830 2700 50  0001 C CNN
+F 3 "~" H 900 2700 50  0001 C CNN
+	1    900  2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Reference_Voltage:REF3025 U1
+U 1 1 5DCA05B9
+P 1600 3300
+F 0 "U1" H 1371 3346 50  0000 R CNN
+F 1 "REF3025" H 1371 3255 50  0000 R CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1600 2850 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 1700 2950 50  0001 C CIN
+	1    1600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2300 700  2400
+Wire Wire Line
+	700  2700 750  2700
+Wire Wire Line
+	1500 2700 1500 3000
+Wire Wire Line
+	1500 3600 1500 4850
+$Comp
+L Device:R R2
+U 1 1 5DCA210F
+P 3550 3050
+F 0 "R2" H 3480 3004 50  0000 R CNN
+F 1 "5000000" H 3480 3095 50  0000 R CNN
+F 2 "" V 3480 3050 50  0001 C CNN
+F 3 "~" H 3550 3050 50  0001 C CNN
+	1    3550 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DCA2AF3
+P 4100 3050
+F 0 "R3" H 4030 3004 50  0000 R CNN
+F 1 "5000000" H 4030 3095 50  0000 R CNN
+F 2 "" V 4030 3050 50  0001 C CNN
+F 3 "~" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 2700 3550 2900
+Wire Wire Line
+	3550 2700 4100 2700
+Wire Wire Line
+	4100 2700 4100 2900
+Wire Wire Line
+	4100 3200 4100 3300
+Connection ~ 4100 3300
+Wire Wire Line
+	4100 3300 4550 3300
+Wire Wire Line
+	3550 3200 3550 4250
+Connection ~ 3550 4250
+Wire Wire Line
+	3550 4250 3950 4250
+Wire Wire Line
+	700  2400 4750 2400
+Wire Wire Line
+	4750 2400 4750 3100
+Connection ~ 700  2400
+Wire Wire Line
+	700  2400 700  2700
+Wire Wire Line
+	4750 3700 4750 4850
+Wire Wire Line
+	4750 4850 1500 4850
+Connection ~ 1500 4850
+Wire Wire Line
+	1500 4850 1500 5250
+$Comp
+L Device:R R4
+U 1 1 5DCA5382
+P 5450 2900
+F 0 "R4" H 5380 2854 50  0000 R CNN
+F 1 "200" H 5380 2945 50  0000 R CNN
+F 2 "" V 5380 2900 50  0001 C CNN
+F 3 "~" H 5450 2900 50  0001 C CNN
+	1    5450 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DCA59C1
+P 5750 2500
+F 0 "R5" V 5957 2500 50  0000 C CNN
+F 1 "100000" V 5866 2500 50  0000 C CNN
+F 2 "" V 5680 2500 50  0001 C CNN
+F 3 "~" H 5750 2500 50  0001 C CNN
+	1    5750 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C3
+U 1 1 5DCA730D
+P 4950 4800
+F 0 "C3" H 4772 4754 50  0000 R CNN
+F 1 "0.1uf" H 4772 4845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4950 4800 50  0001 C CNN
+F 3 "~" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 3700 4950 4150
+Wire Wire Line
+	4850 3700 4850 4350
+Wire Wire Line
+	4850 4350 4950 4350
+Connection ~ 4950 4350
+Wire Wire Line
+	4950 4350 4950 4450
+Connection ~ 4950 4450
+Wire Wire Line
+	4950 4450 4950 4550
+Wire Wire Line
+	4850 3100 4850 2500
+Wire Wire Line
+	4850 2500 5450 2500
+Wire Wire Line
+	5450 2750 5450 2500
+Connection ~ 5450 2500
+Wire Wire Line
+	5450 2500 5600 2500
+Wire Wire Line
+	5900 2500 6300 2500
+Wire Wire Line
+	6300 2500 6300 3400
+Wire Wire Line
+	6300 3400 5150 3400
+Wire Wire Line
+	5450 3050 5450 4150
+Wire Wire Line
+	5450 4150 4950 4150
+Connection ~ 4950 4150
+Wire Wire Line
+	4950 4150 4950 4350
+Text Label 6700 3400 0    50   ~ 0
+EmgSense
+Wire Wire Line
+	6700 3400 6300 3400
+Connection ~ 6300 3400
+Wire Wire Line
+	4950 5050 4950 5250
+Wire Wire Line
+	4950 5250 1500 5250
+Connection ~ 1500 5250
+Wire Wire Line
+	1500 5250 1500 5450
+Wire Wire Line
+	1900 3300 2100 3300
+Wire Wire Line
+	2100 3300 2100 2700
+Wire Wire Line
+	2100 2700 3550 2700
+Connection ~ 3550 2700
+Wire Wire Line
+	1050 2700 1500 2700
+Wire Wire Line
+	2100 3300 2100 4450
+Wire Wire Line
+	2100 4450 4950 4450
+Connection ~ 2100 3300
+$EndSCHEMATC
